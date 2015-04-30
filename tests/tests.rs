@@ -4,6 +4,21 @@
 extern crate diff;
 extern crate quickcheck;
 
+pub fn undiff<T: Clone>(diff: &[::diff::Result<&T>]) -> (Vec<T>, Vec<T>) {
+    let (mut left, mut right) = (vec![], vec![]);
+    for d in diff {
+        match d {
+            &::diff::Result::Left(l) => left.push(l.clone()),
+            &::diff::Result::Both(l, r) => {
+                left.push(l.clone());
+                right.push(r.clone());
+            },
+            &::diff::Result::Right(r) => right.push(r.clone()),
+        }
+    }
+    (left, right)
+}
+
 speculate! {
     describe "slice" {
         before {
@@ -12,17 +27,7 @@ speculate! {
             {
                 let diff = ::diff::slice(&left, &right);
                 assert_eq!(diff.len(), len);
-                let (mut left_, mut right_) = (vec![], vec![]);
-                for d in diff {
-                    match d {
-                        ::diff::Result::Left(l) => left_.push(l.clone()),
-                        ::diff::Result::Both(l, r) => {
-                            left_.push(l.clone());
-                            right_.push(r.clone());
-                        },
-                        ::diff::Result::Right(r) => right_.push(r.clone()),
-                    }
-                }
+                let (left_, right_) = undiff(&diff);
                 assert_eq!(left, &left_[..]);
                 assert_eq!(right, &right_[..]);
             }
@@ -63,17 +68,7 @@ speculate! {
         test "quickcheck" {
             fn prop(left: Vec<i32>, right: Vec<i32>) -> bool {
                 let diff = ::diff::slice(&left, &right);
-                let (mut left_, mut right_) = (vec![], vec![]);
-                for d in diff {
-                    match d {
-                        ::diff::Result::Left(l) => left_.push(l.clone()),
-                        ::diff::Result::Both(l, r) => {
-                            left_.push(l.clone());
-                            right_.push(r.clone());
-                        },
-                        ::diff::Result::Right(r) => right_.push(r.clone()),
-                    }
-                }
+                let (left_, right_) = undiff(&diff);
                 left == &left_[..] && right == &right_[..]
             }
 
