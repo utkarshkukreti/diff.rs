@@ -12,6 +12,11 @@ pub fn slice<'a, T: PartialEq>(left: &'a [T],
     iter(left.iter(), right.iter())
 }
 
+/// Computes the diff between the lines of two strings.
+pub fn lines<'a>(left: &'a str, right: &'a str) -> Vec<Result<&'a str>> {
+    iter(left.lines(), right.lines())
+}
+
 fn iter<'a, I, T>(left: I, right: I) -> Vec<Result<T>> where
     I: Clone + Iterator<Item = T> + DoubleEndedIterator, T: PartialEq
 {

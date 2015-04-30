@@ -19,6 +19,22 @@ pub fn undiff<T: Clone>(diff: &[::diff::Result<&T>]) -> (Vec<T>, Vec<T>) {
     (left, right)
 }
 
+pub fn undiff_str<'a>(diff: &[::diff::Result<&'a str>])
+                      -> (Vec<&'a str>, Vec<&'a str>) {
+    let (mut left, mut right) = (vec![], vec![]);
+    for d in diff {
+        match d {
+            &::diff::Result::Left(l) => left.push(l.clone()),
+            &::diff::Result::Both(l, r) => {
+                left.push(l.clone());
+                right.push(r.clone());
+            },
+            &::diff::Result::Right(r) => right.push(r.clone()),
+        }
+    }
+    (left, right)
+}
+
 speculate! {
     describe "slice" {
         before {
@@ -73,6 +89,35 @@ speculate! {
             }
 
             ::quickcheck::quickcheck(prop as fn(Vec<i32>, Vec<i32>) -> bool);
+        }
+    }
+
+    describe "lines" {
+        before {
+            fn go(left: &str, right: &str, len: usize) {
+                let diff = ::diff::lines(&left, &right);
+                assert_eq!(diff.len(), len);
+                let (left_, right_) = undiff_str(&diff);
+                assert_eq!(left, left_.connect("\n"));
+                assert_eq!(right, right_.connect("\n"));
+            }
+        }
+
+        test "both empty" {
+            go("", "", 0);
+        }
+
+        test "one empty" {
+            go("foo", "", 1);
+            go("", "foo", 1);
+        }
+
+        test "both equal and non-empty" {
+            go("foo\nbar", "foo\nbar", 2);
+        }
+
+        test "misc 1" {
+            go("foo\nbar\nbaz", "foo\nbaz\nquux", 4);
         }
     }
 }
