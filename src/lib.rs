@@ -17,6 +17,11 @@ pub fn lines<'a>(left: &'a str, right: &'a str) -> Vec<Result<&'a str>> {
     iter(left.lines(), right.lines())
 }
 
+/// Computes the diff between the chars of two strings.
+pub fn chars<'a>(left: &'a str, right: &'a str) -> Vec<Result<char>> {
+    iter(left.chars(), right.chars())
+}
+
 fn iter<'a, I, T>(left: I, right: I) -> Vec<Result<T>> where
     I: Clone + Iterator<Item = T> + DoubleEndedIterator, T: PartialEq
 {

@@ -35,6 +35,21 @@ pub fn undiff_str<'a>(diff: &[::diff::Result<&'a str>])
     (left, right)
 }
 
+pub fn undiff_chars<'a>(diff: &[::diff::Result<char>]) -> (String, String) {
+    let (mut left, mut right) = (vec![], vec![]);
+    for d in diff {
+        match d {
+            &::diff::Result::Left(l) => left.push(l.clone()),
+            &::diff::Result::Both(l, r) => {
+                left.push(l.clone());
+                right.push(r.clone());
+            },
+            &::diff::Result::Right(r) => right.push(r.clone()),
+        }
+    }
+    (left.iter().cloned().collect(), right.iter().cloned().collect())
+}
+
 speculate! {
     describe "slice" {
         before {
@@ -118,6 +133,35 @@ speculate! {
 
         test "misc 1" {
             go("foo\nbar\nbaz", "foo\nbaz\nquux", 4);
+        }
+    }
+
+    describe "chars" {
+        before {
+            fn go(left: &str, right: &str, len: usize) {
+                let diff = ::diff::chars(&left, &right);
+                assert_eq!(diff.len(), len);
+                let (left_, right_) = undiff_chars(&diff);
+                assert_eq!(left, left_);
+                assert_eq!(right, right_);
+            }
+        }
+
+        test "both empty" {
+            go("", "", 0);
+        }
+
+        test "one empty" {
+            go("foo", "", 3);
+            go("", "foo", 3);
+        }
+
+        test "both equal and non-empty" {
+            go("foo bar", "foo bar", 7);
+        }
+
+        test "misc 1" {
+            go("foo bar baz", "foo baz quux", 16);
         }
     }
 }
