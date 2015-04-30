@@ -5,3 +5,4 @@ authors = ["Utkarsh Kukreti <utkarshkukreti@gmail.com>"]
 
 [dev-dependencies]
 speculate = "0.0.12"
+quickcheck = "0.2.16"
