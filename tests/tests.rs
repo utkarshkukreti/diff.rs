@@ -2,6 +2,7 @@
 #![plugin(speculate)]
 
 extern crate diff;
+extern crate quickcheck;
 
 speculate! {
     describe "slice" {
@@ -57,6 +58,26 @@ speculate! {
             let left = [1, 2, 1, 2, 3, 2, 2, 3, 1, 3];
             let right = [3, 3, 1, 2, 3, 1, 2, 3, 4, 1];
             go(&left, &right, 14);
+        }
+
+        test "quickcheck" {
+            fn prop(left: Vec<i32>, right: Vec<i32>) -> bool {
+                let diff = ::diff::slice(&left, &right);
+                let (mut left_, mut right_) = (vec![], vec![]);
+                for d in diff {
+                    match d {
+                        ::diff::Result::Left(l) => left_.push(l.clone()),
+                        ::diff::Result::Both(l, r) => {
+                            left_.push(l.clone());
+                            right_.push(r.clone());
+                        },
+                        ::diff::Result::Right(r) => right_.push(r.clone()),
+                    }
+                }
+                left == &left_[..] && right == &right_[..]
+            }
+
+            ::quickcheck::quickcheck(prop as fn(Vec<i32>, Vec<i32>) -> bool);
         }
     }
 }
