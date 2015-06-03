@@ -6,5 +6,5 @@ description = "An LCS based slice and string diffing implementation."
 license = "MIT"
 
 [dev-dependencies]
-speculate = "0.0.13"
+speculate = "0.0.14"
 quickcheck = "0.2.16"
