@@ -4,6 +4,8 @@ version = "0.1.2"
 authors = ["Utkarsh Kukreti <utkarshkukreti@gmail.com>"]
 description = "An LCS based slice and string diffing implementation."
 license = "MIT"
+homepage = "https://github.com/utkarshkukreti/diff.rs"
+repository = "https://github.com/utkarshkukreti/diff.rs"
 
 [dev-dependencies]
 speculate = "0.0.14"
