@@ -4,7 +4,7 @@
 
 ## Example
 
-```
+```rust
 extern crate diff;
 
 fn main() {
