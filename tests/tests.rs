@@ -113,8 +113,8 @@ speculate! {
                 let diff = ::diff::lines(&left, &right);
                 assert_eq!(diff.len(), len);
                 let (left_, right_) = undiff_str(&diff);
-                assert_eq!(left, left_.connect("\n"));
-                assert_eq!(right, right_.connect("\n"));
+                assert_eq!(left, left_.join("\n"));
+                assert_eq!(right, right_.join("\n"));
             }
         }
 
