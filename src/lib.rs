@@ -27,37 +27,79 @@ fn iter<'a, I, T>(left: I, right: I) -> Vec<Result<T>> where
 {
     let left_count = left.clone().count();
     let right_count = right.clone().count();
-    let mut table = vec![vec![0; right_count + 1]; left_count + 1];
 
-    for (i, l) in left.clone().enumerate() {
-        for (j, r) in right.clone().enumerate() {
-            table[i+1][j+1] = if l == r {
-                table[i][j] + 1
+    let leading_equals = left.clone()
+                             .zip(right.clone())
+                             .take_while(|p| p.0 == p.1)
+                             .count();
+    let trailing_equals = left.clone()
+                              .rev()
+                              .zip(right.clone().rev())
+                              .take(left_count - leading_equals)
+                              .take_while(|p| p.0 == p.1)
+                              .count();
+
+    let left_diff_size = left_count - leading_equals - trailing_equals;
+    let right_diff_size = right_count - leading_equals - trailing_equals;
+
+    let table: Vec<Vec<u32>> = {
+        let mut table = vec![vec![0; right_diff_size + 1]; left_diff_size + 1];
+        let left_skip = left.clone().skip(leading_equals).take(left_diff_size);
+        let right_skip = right.clone()
+                              .skip(leading_equals)
+                              .take(right_diff_size);
+
+        for (i, l) in left_skip.clone().enumerate() {
+            for (j, r) in right_skip.clone().enumerate() {
+                table[i+1][j+1] = if l == r {
+                    table[i][j] + 1
+                } else {
+                    std::cmp::max(table[i][j+1], table[i+1][j])
+                };
+            }
+        }
+
+        table
+    };
+
+    let diff = {    
+        let mut diff = Vec::with_capacity(left_diff_size + right_diff_size);
+        let mut i = left_diff_size;
+        let mut j = right_diff_size;
+        let mut li = left.clone().rev().skip(trailing_equals);
+        let mut ri = right.clone().rev().skip(trailing_equals);
+
+        loop {
+            if i > 0 && (j == 0 || table[i][j] == table[i-1][j]) {
+                i -= 1;
+                diff.push(Result::Left(li.next().unwrap()));
+            } else if j > 0 && (i == 0 || table[i][j] == table[i][j-1]) {
+                j -= 1;
+                diff.push(Result::Right(ri.next().unwrap()));
+            } else if i > 0 && j > 0 {
+                i -= 1;
+                j -= 1;
+                diff.push(Result::Both(li.next().unwrap(), ri.next().unwrap()));
             } else {
-                std::cmp::max(table[i][j+1], table[i+1][j])
-            };
+                break
+            }
         }
-    }
 
-    let mut diff = vec![];
-    let (mut i, mut j) = (left_count, right_count);
-    let (mut li, mut ri) = (left.clone(), right.clone());
-    loop {
-        if i > 0 && (j == 0 || table[i][j] == table[i-1][j]) {
-            i -= 1;
-            diff.push(Result::Left(li.next_back().unwrap()));
-        } else if j > 0 && (i == 0 || table[i][j] == table[i][j-1]) {
-            j -= 1;
-            diff.push(Result::Right(ri.next_back().unwrap()));
-        } else if i > 0 && j > 0 {
-            i -= 1;
-            j -= 1;
-            diff.push(Result::Both(li.next_back().unwrap(),
-                                   ri.next_back().unwrap()));
-        } else {
-            break
-        }
-    }
-    diff.reverse();
-    diff
+        diff
+    };
+    
+    let diff_size = leading_equals + diff.len() + trailing_equals;
+    let mut total_diff = Vec::with_capacity(diff_size);
+    
+    total_diff.extend(left.clone()
+                          .zip(right.clone())
+                          .take(leading_equals)
+                          .map(|(l, r)| Result::Both(l, r)));
+    total_diff.extend(diff.into_iter().rev());
+    total_diff.extend(left.rev()
+                          .zip(right.rev())
+                          .take(trailing_equals)
+                          .map(|(l, r)| Result::Both(l, r)));
+
+    total_diff
 }
