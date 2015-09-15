@@ -62,7 +62,7 @@ fn iter<'a, I, T>(left: I, right: I) -> Vec<Result<T>> where
         table
     };
 
-    let diff = {    
+    let diff = {
         let mut diff = Vec::with_capacity(left_diff_size + right_diff_size);
         let mut i = left_diff_size;
         let mut j = right_diff_size;
@@ -87,10 +87,10 @@ fn iter<'a, I, T>(left: I, right: I) -> Vec<Result<T>> where
 
         diff
     };
-    
+
     let diff_size = leading_equals + diff.len() + trailing_equals;
     let mut total_diff = Vec::with_capacity(diff_size);
-    
+
     total_diff.extend(left.clone()
                           .zip(right.clone())
                           .take(leading_equals)
