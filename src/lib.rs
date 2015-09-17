@@ -96,9 +96,8 @@ fn iter<'a, I, T>(left: I, right: I) -> Vec<Result<T>> where
                           .take(leading_equals)
                           .map(|(l, r)| Result::Both(l, r)));
     total_diff.extend(diff.into_iter().rev());
-    total_diff.extend(left.rev()
-                          .zip(right.rev())
-                          .take(trailing_equals)
+    total_diff.extend(left.skip(leading_equals + left_diff_size)
+                          .zip(right.skip(leading_equals + right_diff_size))
                           .map(|(l, r)| Result::Both(l, r)));
 
     total_diff

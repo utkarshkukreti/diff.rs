@@ -96,6 +96,12 @@ speculate! {
             go(&left, &right, 14);
         }
 
+        test "misc 3" {
+            let left = [1, 3, 4];
+            let right = [2, 3, 4];
+            go(&left, &right, 4);
+        }
+
         test "quickcheck" {
             fn prop(left: Vec<i32>, right: Vec<i32>) -> bool {
                 let diff = ::diff::slice(&left, &right);
