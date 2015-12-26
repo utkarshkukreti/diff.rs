@@ -170,4 +170,13 @@ speculate! {
             go("foo bar baz", "foo baz quux", 16);
         }
     }
+
+    describe "issues" {
+        test "#4" {
+            assert_eq!(::diff::slice(&[1], &[2]), vec![::diff::Result::Left(&1),
+                                                       ::diff::Result::Right(&2)]);
+            assert_eq!(::diff::lines("a", "b"), vec![::diff::Result::Left("a"),
+                                                     ::diff::Result::Right("b")]);
+        }
+    }
 }

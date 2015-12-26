@@ -70,12 +70,12 @@ fn iter<'a, I, T>(left: I, right: I) -> Vec<Result<T>> where
         let mut ri = right.clone().rev().skip(trailing_equals);
 
         loop {
-            if i > 0 && (j == 0 || table[i][j] == table[i-1][j]) {
-                i -= 1;
-                diff.push(Result::Left(li.next().unwrap()));
-            } else if j > 0 && (i == 0 || table[i][j] == table[i][j-1]) {
+            if j > 0 && (i == 0 || table[i][j] == table[i][j-1]) {
                 j -= 1;
                 diff.push(Result::Right(ri.next().unwrap()));
+            } else if i > 0 && (j == 0 || table[i][j] == table[i-1][j]) {
+                i -= 1;
+                diff.push(Result::Left(li.next().unwrap()));
             } else if i > 0 && j > 0 {
                 i -= 1;
                 j -= 1;
