@@ -25,9 +25,9 @@ prints
 
 ```
  foo
-+baz
- bar
--baz
+-bar
+ baz
++bar
  quux
 ```
 
