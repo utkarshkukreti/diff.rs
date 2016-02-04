@@ -1,3 +1,5 @@
+use std::cmp;
+
 /// A fragment of a computed diff.
 #[derive(Clone, Debug, PartialEq)]
 pub enum Result<T> {
@@ -27,6 +29,7 @@ fn iter<'a, I, T>(left: I, right: I) -> Vec<Result<T>> where
 {
     let left_count = left.clone().count();
     let right_count = right.clone().count();
+    let min_count = cmp::min(left_count, right_count);
 
     let leading_equals = left.clone()
                              .zip(right.clone())
@@ -35,7 +38,7 @@ fn iter<'a, I, T>(left: I, right: I) -> Vec<Result<T>> where
     let trailing_equals = left.clone()
                               .rev()
                               .zip(right.clone().rev())
-                              .take(left_count - leading_equals)
+                              .take(min_count - leading_equals)
                               .take_while(|p| p.0 == p.1)
                               .count();
 
