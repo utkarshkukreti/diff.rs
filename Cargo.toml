@@ -1,6 +1,6 @@
 [package]
 name = "diff"
-version = "0.1.8"
+version = "0.1.9"
 authors = ["Utkarsh Kukreti <utkarshkukreti@gmail.com>"]
 description = "An LCS based slice and string diffing implementation."
 license = "MIT"
