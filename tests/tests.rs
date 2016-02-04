@@ -50,47 +50,6 @@ pub fn undiff_chars<'a>(diff: &[::diff::Result<char>]) -> (String, String) {
     (left.iter().cloned().collect(), right.iter().cloned().collect())
 }
 
-#[test]
-fn uneven_diff() {
-    // This produced an overflow in the lines computation because it
-    // was not accounting for the fact that the "right" length was
-    // less than the "left" length.
-    let expected = r#"
-BacktraceNode {
-    parents: [
-        BacktraceNode {
-            parents: []
-        },
-        BacktraceNode {
-            parents: [
-                BacktraceNode {
-                    parents: []
-                }
-            ]
-        }
-    ]
-}"#;
-    let actual = r#"
-BacktraceNode {
-    parents: [
-        BacktraceNode {
-            parents: []
-        },
-        BacktraceNode {
-            parents: [
-                BacktraceNode {
-                    parents: []
-                },
-                BacktraceNode {
-                    parents: []
-                }
-            ]
-        }
-    ]
-}"#;
-    diff::lines(actual, expected);
-}
-
 speculate! {
     describe "slice" {
         before {
@@ -218,6 +177,46 @@ speculate! {
                                                        ::diff::Result::Right(&2)]);
             assert_eq!(::diff::lines("a", "b"), vec![::diff::Result::Left("a"),
                                                      ::diff::Result::Right("b")]);
+        }
+
+        test "#6" {
+            // This produced an overflow in the lines computation because it
+            // was not accounting for the fact that the "right" length was
+            // less than the "left" length.
+            let expected = r#"
+BacktraceNode {
+    parents: [
+        BacktraceNode {
+            parents: []
+        },
+        BacktraceNode {
+            parents: [
+                BacktraceNode {
+                    parents: []
+                }
+            ]
+        }
+    ]
+}"#;
+            let actual = r#"
+BacktraceNode {
+    parents: [
+        BacktraceNode {
+            parents: []
+        },
+        BacktraceNode {
+            parents: [
+                BacktraceNode {
+                    parents: []
+                },
+                BacktraceNode {
+                    parents: []
+                }
+            ]
+        }
+    ]
+}"#;
+            ::diff::lines(actual, expected);
         }
     }
 }
