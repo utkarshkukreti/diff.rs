@@ -12,15 +12,14 @@ pub fn undiff<T: Clone>(diff: &[::diff::Result<&T>]) -> (Vec<T>, Vec<T>) {
             &::diff::Result::Both(l, r) => {
                 left.push(l.clone());
                 right.push(r.clone());
-            },
+            }
             &::diff::Result::Right(r) => right.push(r.clone()),
         }
     }
     (left, right)
 }
 
-pub fn undiff_str<'a>(diff: &[::diff::Result<&'a str>])
-                      -> (Vec<&'a str>, Vec<&'a str>) {
+pub fn undiff_str<'a>(diff: &[::diff::Result<&'a str>]) -> (Vec<&'a str>, Vec<&'a str>) {
     let (mut left, mut right) = (vec![], vec![]);
     for d in diff {
         match d {
@@ -28,7 +27,7 @@ pub fn undiff_str<'a>(diff: &[::diff::Result<&'a str>])
             &::diff::Result::Both(l, r) => {
                 left.push(l.clone());
                 right.push(r.clone());
-            },
+            }
             &::diff::Result::Right(r) => right.push(r.clone()),
         }
     }
@@ -43,7 +42,7 @@ pub fn undiff_chars<'a>(diff: &[::diff::Result<char>]) -> (String, String) {
             &::diff::Result::Both(l, r) => {
                 left.push(l.clone());
                 right.push(r.clone());
-            },
+            }
             &::diff::Result::Right(r) => right.push(r.clone()),
         }
     }

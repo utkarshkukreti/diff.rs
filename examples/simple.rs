@@ -6,9 +6,9 @@ fn main() {
 
     for diff in diff::lines(left, right) {
         match diff {
-            diff::Result::Left(l)    => println!("-{}", l),
+            diff::Result::Left(l) => println!("-{}", l),
             diff::Result::Both(l, _) => println!(" {}", l),
-            diff::Result::Right(r)   => println!("+{}", r)
+            diff::Result::Right(r) => println!("+{}", r),
         }
     }
 }
