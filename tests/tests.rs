@@ -51,16 +51,14 @@ pub fn undiff_chars<'a>(diff: &[::diff::Result<char>]) -> (String, String) {
 
 speculate! {
     describe "slice" {
-        before {
-            fn go<T>(left: &[T], right: &[T], len: usize) where
-                T: Clone + ::std::fmt::Debug + PartialEq
-            {
-                let diff = ::diff::slice(&left, &right);
-                assert_eq!(diff.len(), len);
-                let (left_, right_) = undiff(&diff);
-                assert_eq!(left, &left_[..]);
-                assert_eq!(right, &right_[..]);
-            }
+        fn go<T>(left: &[T], right: &[T], len: usize) where
+            T: Clone + ::std::fmt::Debug + PartialEq
+        {
+            let diff = ::diff::slice(&left, &right);
+            assert_eq!(diff.len(), len);
+            let (left_, right_) = undiff(&diff);
+            assert_eq!(left, &left_[..]);
+            assert_eq!(right, &right_[..]);
         }
 
         test "empty slices" {
@@ -113,14 +111,12 @@ speculate! {
     }
 
     describe "lines" {
-        before {
-            fn go(left: &str, right: &str, len: usize) {
-                let diff = ::diff::lines(&left, &right);
-                assert_eq!(diff.len(), len);
-                let (left_, right_) = undiff_str(&diff);
-                assert_eq!(left, left_.join("\n"));
-                assert_eq!(right, right_.join("\n"));
-            }
+        fn go(left: &str, right: &str, len: usize) {
+            let diff = ::diff::lines(&left, &right);
+            assert_eq!(diff.len(), len);
+            let (left_, right_) = undiff_str(&diff);
+            assert_eq!(left, left_.join("\n"));
+            assert_eq!(right, right_.join("\n"));
         }
 
         test "both empty" {
@@ -142,14 +138,12 @@ speculate! {
     }
 
     describe "chars" {
-        before {
-            fn go(left: &str, right: &str, len: usize) {
-                let diff = ::diff::chars(&left, &right);
-                assert_eq!(diff.len(), len);
-                let (left_, right_) = undiff_chars(&diff);
-                assert_eq!(left, left_);
-                assert_eq!(right, right_);
-            }
+        fn go(left: &str, right: &str, len: usize) {
+            let diff = ::diff::chars(&left, &right);
+            assert_eq!(diff.len(), len);
+            let (left_, right_) = undiff_chars(&diff);
+            assert_eq!(left, left_);
+            assert_eq!(right, right_);
         }
 
         test "both empty" {
