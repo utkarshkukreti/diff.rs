@@ -23,7 +23,7 @@ pub fn chars<'a>(left: &'a str, right: &'a str) -> Vec<Result<char>> {
     iter(left.chars(), right.chars())
 }
 
-fn iter<'a, I, T>(left: I, right: I) -> Vec<Result<T>>
+fn iter<I, T>(left: I, right: I) -> Vec<Result<T>>
     where I: Clone + Iterator<Item = T> + DoubleEndedIterator,
           T: PartialEq
 {

@@ -7,13 +7,13 @@ extern crate quickcheck;
 pub fn undiff<T: Clone>(diff: &[::diff::Result<&T>]) -> (Vec<T>, Vec<T>) {
     let (mut left, mut right) = (vec![], vec![]);
     for d in diff {
-        match d {
-            &::diff::Result::Left(l) => left.push(l.clone()),
-            &::diff::Result::Both(l, r) => {
+        match *d {
+            ::diff::Result::Left(l) => left.push(l.clone()),
+            ::diff::Result::Both(l, r) => {
                 left.push(l.clone());
                 right.push(r.clone());
             }
-            &::diff::Result::Right(r) => right.push(r.clone()),
+            ::diff::Result::Right(r) => right.push(r.clone()),
         }
     }
     (left, right)
@@ -22,28 +22,28 @@ pub fn undiff<T: Clone>(diff: &[::diff::Result<&T>]) -> (Vec<T>, Vec<T>) {
 pub fn undiff_str<'a>(diff: &[::diff::Result<&'a str>]) -> (Vec<&'a str>, Vec<&'a str>) {
     let (mut left, mut right) = (vec![], vec![]);
     for d in diff {
-        match d {
-            &::diff::Result::Left(l) => left.push(l.clone()),
-            &::diff::Result::Both(l, r) => {
-                left.push(l.clone());
-                right.push(r.clone());
+        match *d {
+            ::diff::Result::Left(l) => left.push(l),
+            ::diff::Result::Both(l, r) => {
+                left.push(l);
+                right.push(r);
             }
-            &::diff::Result::Right(r) => right.push(r.clone()),
+            ::diff::Result::Right(r) => right.push(r),
         }
     }
     (left, right)
 }
 
-pub fn undiff_chars<'a>(diff: &[::diff::Result<char>]) -> (String, String) {
+pub fn undiff_chars(diff: &[::diff::Result<char>]) -> (String, String) {
     let (mut left, mut right) = (vec![], vec![]);
     for d in diff {
-        match d {
-            &::diff::Result::Left(l) => left.push(l.clone()),
-            &::diff::Result::Both(l, r) => {
-                left.push(l.clone());
-                right.push(r.clone());
+        match *d {
+            ::diff::Result::Left(l) => left.push(l),
+            ::diff::Result::Both(l, r) => {
+                left.push(l);
+                right.push(r);
             }
-            &::diff::Result::Right(r) => right.push(r.clone()),
+            ::diff::Result::Right(r) => right.push(r),
         }
     }
     (left.iter().cloned().collect(), right.iter().cloned().collect())
