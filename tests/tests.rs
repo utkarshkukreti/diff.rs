@@ -4,16 +4,18 @@
 extern crate diff;
 extern crate quickcheck;
 
+use diff::Result::*;
+
 pub fn undiff<T: Clone>(diff: &[::diff::Result<&T>]) -> (Vec<T>, Vec<T>) {
     let (mut left, mut right) = (vec![], vec![]);
     for d in diff {
         match *d {
-            ::diff::Result::Left(l) => left.push(l.clone()),
-            ::diff::Result::Both(l, r) => {
+            Left(l) => left.push(l.clone()),
+            Both(l, r) => {
                 left.push(l.clone());
                 right.push(r.clone());
             }
-            ::diff::Result::Right(r) => right.push(r.clone()),
+            Right(r) => right.push(r.clone()),
         }
     }
     (left, right)
@@ -23,12 +25,12 @@ pub fn undiff_str<'a>(diff: &[::diff::Result<&'a str>]) -> (Vec<&'a str>, Vec<&'
     let (mut left, mut right) = (vec![], vec![]);
     for d in diff {
         match *d {
-            ::diff::Result::Left(l) => left.push(l),
-            ::diff::Result::Both(l, r) => {
+            Left(l) => left.push(l),
+            Both(l, r) => {
                 left.push(l);
                 right.push(r);
             }
-            ::diff::Result::Right(r) => right.push(r),
+            Right(r) => right.push(r),
         }
     }
     (left, right)
@@ -38,12 +40,12 @@ pub fn undiff_chars(diff: &[::diff::Result<char>]) -> (String, String) {
     let (mut left, mut right) = (vec![], vec![]);
     for d in diff {
         match *d {
-            ::diff::Result::Left(l) => left.push(l),
-            ::diff::Result::Both(l, r) => {
+            Left(l) => left.push(l),
+            Both(l, r) => {
                 left.push(l);
                 right.push(r);
             }
-            ::diff::Result::Right(r) => right.push(r),
+            Right(r) => right.push(r),
         }
     }
     (left.iter().cloned().collect(), right.iter().cloned().collect())
@@ -166,10 +168,10 @@ speculate! {
 
     describe "issues" {
         test "#4" {
-            assert_eq!(::diff::slice(&[1], &[2]), vec![::diff::Result::Left(&1),
-                                                       ::diff::Result::Right(&2)]);
-            assert_eq!(::diff::lines("a", "b"), vec![::diff::Result::Left("a"),
-                                                     ::diff::Result::Right("b")]);
+            assert_eq!(::diff::slice(&[1], &[2]), vec![Left(&1),
+                                                       Right(&2)]);
+            assert_eq!(::diff::lines("a", "b"), vec![Left("a"),
+                                                     Right("b")]);
         }
 
         test "#6" {
