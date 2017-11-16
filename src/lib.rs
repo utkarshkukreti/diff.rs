@@ -20,11 +20,16 @@ pub fn lines<'a>(left: &'a str, right: &'a str) -> Vec<Result<&'a str>> {
     // '\n'. We handle this special case by inserting one last diff item,
     // depending on whether the left string ends with '\n', or the right one,
     // or both.
-    match (left.as_bytes().last().cloned(), right.as_bytes().last().cloned()) {
-        (Some(b'\n'), Some(b'\n')) => diff.push(Result::Both(&left[left.len()..], &right[right.len()..])),
+    match (
+        left.as_bytes().last().cloned(),
+        right.as_bytes().last().cloned(),
+    ) {
+        (Some(b'\n'), Some(b'\n')) => {
+            diff.push(Result::Both(&left[left.len()..], &right[right.len()..]))
+        }
         (Some(b'\n'), _) => diff.push(Result::Left(&left[left.len()..])),
         (_, Some(b'\n')) => diff.push(Result::Right(&right[right.len()..])),
-        _ => {},
+        _ => {}
     }
     diff
 }
@@ -35,8 +40,9 @@ pub fn chars<'a>(left: &'a str, right: &'a str) -> Vec<Result<char>> {
 }
 
 fn iter<I, T>(left: I, right: I) -> Vec<Result<T>>
-    where I: Clone + Iterator<Item = T> + DoubleEndedIterator,
-          T: PartialEq
+where
+    I: Clone + Iterator<Item = T> + DoubleEndedIterator,
+    T: PartialEq,
 {
     let left_count = left.clone().count();
     let right_count = right.clone().count();
@@ -59,9 +65,7 @@ fn iter<I, T>(left: I, right: I) -> Vec<Result<T>>
     let table: Vec<Vec<u32>> = {
         let mut table = vec![vec![0; right_diff_size + 1]; left_diff_size + 1];
         let left_skip = left.clone().skip(leading_equals).take(left_diff_size);
-        let right_skip = right.clone()
-            .skip(leading_equals)
-            .take(right_diff_size);
+        let right_skip = right.clone().skip(leading_equals).take(right_diff_size);
 
         for (i, l) in left_skip.clone().enumerate() {
             for (j, r) in right_skip.clone().enumerate() {
@@ -105,14 +109,18 @@ fn iter<I, T>(left: I, right: I) -> Vec<Result<T>>
     let diff_size = leading_equals + diff.len() + trailing_equals;
     let mut total_diff = Vec::with_capacity(diff_size);
 
-    total_diff.extend(left.clone()
-        .zip(right.clone())
-        .take(leading_equals)
-        .map(|(l, r)| Result::Both(l, r)));
+    total_diff.extend(
+        left.clone()
+            .zip(right.clone())
+            .take(leading_equals)
+            .map(|(l, r)| Result::Both(l, r)),
+    );
     total_diff.extend(diff.into_iter().rev());
-    total_diff.extend(left.skip(leading_equals + left_diff_size)
-        .zip(right.skip(leading_equals + right_diff_size))
-        .map(|(l, r)| Result::Both(l, r)));
+    total_diff.extend(
+        left.skip(leading_equals + left_diff_size)
+            .zip(right.skip(leading_equals + right_diff_size))
+            .map(|(l, r)| Result::Both(l, r)),
+    );
 
     total_diff
 }

@@ -1,8 +1,8 @@
 #![feature(plugin, test)]
 #![plugin(speculate)]
 
-extern crate test;
 extern crate diff;
+extern crate test;
 
 speculate! {
     describe "slice" {

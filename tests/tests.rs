@@ -48,7 +48,10 @@ pub fn undiff_chars(diff: &[::diff::Result<char>]) -> (String, String) {
             Right(r) => right.push(r),
         }
     }
-    (left.iter().cloned().collect(), right.iter().cloned().collect())
+    (
+        left.iter().cloned().collect(),
+        right.iter().cloned().collect(),
+    )
 }
 
 speculate! {
