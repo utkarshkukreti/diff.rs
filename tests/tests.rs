@@ -137,6 +137,15 @@ speculate! {
         test "misc 1" {
             go("foo\nbar\nbaz", "foo\nbaz\nquux", 4);
         }
+
+        test "#10" {
+            go("a\nb\nc", "a\nb\nc\n", 4);
+            go("a\nb\nc\n", "a\nb\nc", 4);
+            let left = "a\nb\n\nc\n\n\n";
+            let right = "a\n\n\nc\n\n";
+            go(left, right, 8);
+            go(right, left, 8);
+        }
     }
 
     describe "chars" {

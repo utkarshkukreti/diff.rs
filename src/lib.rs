@@ -15,7 +15,18 @@ pub fn slice<'a, T: PartialEq>(left: &'a [T], right: &'a [T]) -> Vec<Result<&'a 
 
 /// Computes the diff between the lines of two strings.
 pub fn lines<'a>(left: &'a str, right: &'a str) -> Vec<Result<&'a str>> {
-    iter(left.lines(), right.lines())
+    let mut diff = iter(left.lines(), right.lines());
+    // str::lines() does not yield an empty str at the end if the str ends with
+    // '\n'. We handle this special case by inserting one last diff item,
+    // depending on whether the left string ends with '\n', or the right one,
+    // or both.
+    match (left.as_bytes().last().cloned(), right.as_bytes().last().cloned()) {
+        (Some(b'\n'), Some(b'\n')) => diff.push(Result::Both(&left[left.len()..], &right[right.len()..])),
+        (Some(b'\n'), _) => diff.push(Result::Left(&left[left.len()..])),
+        (_, Some(b'\n')) => diff.push(Result::Right(&right[right.len()..])),
+        _ => {},
+    }
+    diff
 }
 
 /// Computes the diff between the chars of two strings.
