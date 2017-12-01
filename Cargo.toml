@@ -10,4 +10,4 @@ repository = "https://github.com/utkarshkukreti/diff.rs"
 
 [dev-dependencies]
 speculate = "0.0.25"
-quickcheck = { version = "0.4.1", default-features = false }
+quickcheck = { version = "0.5", default-features = false }
