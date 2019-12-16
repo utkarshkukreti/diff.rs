@@ -1,10 +1,9 @@
-#![feature(plugin)]
-#![plugin(speculate)]
-
 extern crate diff;
+extern crate speculate;
 extern crate quickcheck;
 
 use diff::Result::*;
+use speculate::speculate;
 
 pub fn undiff<T: Clone>(diff: &[::diff::Result<&T>]) -> (Vec<T>, Vec<T>) {
     let (mut left, mut right) = (vec![], vec![]);
