@@ -67,7 +67,7 @@ where
     let table: Vec<Vec<u32>> = {
         let mut table = vec![vec![0; right_diff_size + 1]; left_diff_size + 1];
         let left_skip = left.clone().skip(leading_equals).take(left_diff_size);
-        let right_skip = right.clone().skip(leading_equals).take(right_diff_size);
+        let right_skip = advance_by(right.clone(), leading_equals).take(right_diff_size);
 
         for (i, l) in left_skip.clone().enumerate() {
             for (j, r) in right_skip.clone().enumerate() {
@@ -125,4 +125,12 @@ where
     );
 
     total_diff
+}
+
+#[inline]
+fn advance_by<I: Iterator>(mut iter: I, by: usize) -> I {
+    for _ in 0..by {
+        iter.next();
+    }
+    iter
 }
