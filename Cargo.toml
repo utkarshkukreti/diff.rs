@@ -11,3 +11,8 @@ repository = "https://github.com/utkarshkukreti/diff.rs"
 [dev-dependencies]
 speculate = "0.1.2"
 quickcheck = "0.9.0"
+criterion = "0.3.5"
+
+[[bench]]
+name = "benches"
+harness = false
