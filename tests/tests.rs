@@ -58,7 +58,7 @@ speculate! {
         fn go<T>(left: &[T], right: &[T], len: usize) where
             T: Clone + ::std::fmt::Debug + PartialEq
         {
-            let diff = ::diff::slice(&left, &right);
+            let diff = ::diff::slice(left, right);
             assert_eq!(diff.len(), len);
             let (left_, right_) = undiff(&diff);
             assert_eq!(left, &left_[..]);
@@ -67,7 +67,7 @@ speculate! {
 
         test "empty slices" {
             let slice: &[()] = &[];
-            go(&slice, &slice, 0);
+            go(slice, slice, 0);
         }
 
         test "equal + non-empty slices" {
@@ -107,7 +107,7 @@ speculate! {
             fn prop(left: Vec<i32>, right: Vec<i32>) -> bool {
                 let diff = ::diff::slice(&left, &right);
                 let (left_, right_) = undiff(&diff);
-                left == &left_[..] && right == &right_[..]
+                left == left_[..] && right == right_[..]
             }
 
             ::quickcheck::quickcheck(prop as fn(Vec<i32>, Vec<i32>) -> bool);
@@ -116,7 +116,7 @@ speculate! {
 
     describe "lines" {
         fn go(left: &str, right: &str, len: usize) {
-            let diff = ::diff::lines(&left, &right);
+            let diff = ::diff::lines(left, right);
             assert_eq!(diff.len(), len);
             let (left_, right_) = undiff_str(&diff);
             assert_eq!(left, left_.join("\n"));
@@ -152,7 +152,7 @@ speculate! {
 
     describe "chars" {
         fn go(left: &str, right: &str, len: usize) {
-            let diff = ::diff::chars(&left, &right);
+            let diff = ::diff::chars(left, right);
             assert_eq!(diff.len(), len);
             let (left_, right_) = undiff_chars(&diff);
             assert_eq!(left, left_);

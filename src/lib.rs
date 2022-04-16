@@ -69,7 +69,7 @@ where
         let left_skip = left.clone().skip(leading_equals).take(left_diff_size);
         let right_skip = advance_by(right.clone(), leading_equals).take(right_diff_size);
 
-        for (i, l) in left_skip.clone().enumerate() {
+        for (i, l) in left_skip.enumerate() {
             for (j, r) in right_skip.clone().enumerate() {
                 table[i + 1][j + 1] = if l == r {
                     table[i][j] + 1
