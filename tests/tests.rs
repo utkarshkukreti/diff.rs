@@ -1,6 +1,6 @@
 extern crate diff;
-extern crate speculate;
 extern crate quickcheck;
+extern crate speculate;
 
 use diff::Result::*;
 use speculate::speculate;

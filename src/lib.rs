@@ -48,11 +48,13 @@ where
     let right_count = right.clone().count();
     let min_count = cmp::min(left_count, right_count);
 
-    let leading_equals = left.clone()
+    let leading_equals = left
+        .clone()
         .zip(right.clone())
         .take_while(|p| p.0 == p.1)
         .count();
-    let trailing_equals = left.clone()
+    let trailing_equals = left
+        .clone()
         .rev()
         .zip(right.clone().rev())
         .take(min_count - leading_equals)
