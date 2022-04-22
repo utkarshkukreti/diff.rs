@@ -62,22 +62,25 @@ where
         .take_while(|(l, r)| l == r)
         .count();
 
-    let table: Vec<Vec<u32>> = {
+    let table: Vec2<u32> = {
         let left_diff_size = left.len() - leading_equals - trailing_equals;
         let right_diff_size = right.len() - leading_equals - trailing_equals;
 
-        let mut table = vec![vec![0; right_diff_size + 1]; left_diff_size + 1];
+        let mut table = Vec2::new(0, [left_diff_size + 1, right_diff_size + 1]);
 
         let left_skip = &left[leading_equals..left.len() - trailing_equals];
         let right_skip = &right[leading_equals..right.len() - trailing_equals];
 
         for (i, l) in left_skip.iter().enumerate() {
             for (j, r) in right_skip.iter().enumerate() {
-                table[i + 1][j + 1] = if l == r {
-                    table[i][j] + 1
-                } else {
-                    table[i][j + 1].max(table[i + 1][j])
-                };
+                table.set(
+                    [i + 1, j + 1],
+                    if l == r {
+                        table.get([i, j]) + 1
+                    } else {
+                        *table.get([i, j + 1]).max(table.get([i + 1, j]))
+                    },
+                );
             }
         }
 
@@ -95,16 +98,16 @@ where
 
     {
         let start = diff.len();
-        let mut i = table.len() - 1;
-        let mut j = table[0].len() - 1;
+        let mut i = table.len[0] - 1;
+        let mut j = table.len[1] - 1;
         let left = &left[leading_equals..];
         let right = &right[leading_equals..];
 
         loop {
-            if j > 0 && (i == 0 || table[i][j] == table[i][j - 1]) {
+            if j > 0 && (i == 0 || table.get([i, j]) == table.get([i, j - 1])) {
                 j -= 1;
                 diff.push(Result::Right(mapper(&right[j])));
-            } else if i > 0 && (j == 0 || table[i][j] == table[i - 1][j]) {
+            } else if i > 0 && (j == 0 || table.get([i, j]) == table.get([i - 1, j])) {
                 i -= 1;
                 diff.push(Result::Left(mapper(&left[i])));
             } else if i > 0 && j > 0 {
@@ -126,4 +129,36 @@ where
     );
 
     diff
+}
+
+struct Vec2<T> {
+    len: [usize; 2],
+    data: Vec<T>,
+}
+
+impl<T> Vec2<T> {
+    #[inline]
+    fn new(value: T, len: [usize; 2]) -> Self
+    where
+        T: Clone,
+    {
+        Vec2 {
+            len,
+            data: vec![value; len[0] * len[1]],
+        }
+    }
+
+    #[inline]
+    fn get(&self, index: [usize; 2]) -> &T {
+        debug_assert!(index[0] < self.len[0]);
+        debug_assert!(index[1] < self.len[1]);
+        &self.data[index[0] * self.len[1] + index[1]]
+    }
+
+    #[inline]
+    fn set(&mut self, index: [usize; 2], value: T) {
+        debug_assert!(index[0] < self.len[0]);
+        debug_assert!(index[1] < self.len[1]);
+        self.data[index[0] * self.len[1] + index[1]] = value;
+    }
 }
