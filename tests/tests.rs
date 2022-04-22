@@ -239,7 +239,7 @@ fn gitignores() {
         .split("!!!")
         .map(|str| str.trim())
         .filter(|str| !str.is_empty())
-        .map(|str| str.into())
+        .map(|str| str.replace("\r", ""))
         .collect::<Vec<String>>();
 
     go(
@@ -296,7 +296,7 @@ fn gitignores() {
         }
 
         if let Ok(expected) = std::fs::read_to_string(path) {
-            assert_eq!(expected, actual);
+            assert_eq!(expected.replace("\r", ""), actual);
         } else {
             std::fs::write(path, actual).unwrap();
         }
