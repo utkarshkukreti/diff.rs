@@ -2,6 +2,13 @@
 
 > An LCS based slice and string diffing implementation.
 
+## Install
+
+```toml
+[dependencies]
+diff = "0.1"
+```
+
 ## Example
 
 ```rust
