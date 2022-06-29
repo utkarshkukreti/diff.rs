@@ -1,8 +1,11 @@
 /// A fragment of a computed diff.
 #[derive(Clone, Debug, PartialEq)]
 pub enum Result<T> {
+    /// An element that only exists in the left input.
     Left(T),
+    /// Elements that exist in both inputs.
     Both(T, T),
+    /// An element that only exists in the right input.
     Right(T),
 }
 
