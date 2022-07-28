@@ -1,3 +1,5 @@
+#![forbid(unsafe_code)]
+
 /// A fragment of a computed diff.
 #[derive(Clone, Debug, PartialEq)]
 pub enum Result<T> {
