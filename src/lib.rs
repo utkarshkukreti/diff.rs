@@ -2,6 +2,7 @@
 
 /// A fragment of a computed diff.
 #[derive(Clone, Debug, PartialEq)]
+#[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub enum Result<T> {
     /// An element that only exists in the left input.
     Left(T),
