@@ -8,6 +8,9 @@ documentation = "https://docs.rs/diff"
 homepage = "https://github.com/utkarshkukreti/diff.rs"
 repository = "https://github.com/utkarshkukreti/diff.rs"
 
+[dependencies]
+serde = { version = "1", features = ["derive"], optional = true }
+
 [dev-dependencies]
 speculate = "0.1.2"
 quickcheck = "1.0.3"
