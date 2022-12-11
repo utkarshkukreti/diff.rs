@@ -1,7 +1,7 @@
 #![forbid(unsafe_code)]
 
 /// A fragment of a computed diff.
-#[derive(Clone, Debug, PartialEq)]
+#[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Result<T> {
     /// An element that only exists in the left input.
     Left(T),
