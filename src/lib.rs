@@ -68,13 +68,10 @@ where
         .count();
 
     let table: Vec2<u32> = {
-        let left_diff_size = left.len() - leading_equals - trailing_equals;
-        let right_diff_size = right.len() - leading_equals - trailing_equals;
-
-        let mut table = Vec2::new(0, [left_diff_size + 1, right_diff_size + 1]);
-
         let left_skip = &left[leading_equals..left.len() - trailing_equals];
         let right_skip = &right[leading_equals..right.len() - trailing_equals];
+
+        let mut table = Vec2::new(0, [left_skip.len() + 1, right_skip.len() + 1]);
 
         for (i, l) in left_skip.iter().enumerate() {
             for (j, r) in right_skip.iter().enumerate() {
