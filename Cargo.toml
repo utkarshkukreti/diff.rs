@@ -9,7 +9,6 @@ homepage = "https://github.com/utkarshkukreti/diff.rs"
 repository = "https://github.com/utkarshkukreti/diff.rs"
 
 [dev-dependencies]
-speculate = "0.1.2"
 quickcheck = "1.0.3"
 criterion = "0.5.1"
 
