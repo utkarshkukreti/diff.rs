@@ -3,7 +3,7 @@ extern crate quickcheck;
 
 use diff::Result::*;
 
-pub fn undiff<T: Clone>(diff: &[::diff::Result<&T>]) -> (Vec<T>, Vec<T>) {
+fn undiff<T: Clone>(diff: &[::diff::Result<&T>]) -> (Vec<T>, Vec<T>) {
     let (mut left, mut right) = (vec![], vec![]);
     for d in diff {
         match *d {
@@ -18,7 +18,7 @@ pub fn undiff<T: Clone>(diff: &[::diff::Result<&T>]) -> (Vec<T>, Vec<T>) {
     (left, right)
 }
 
-pub fn undiff_lines<'a>(diff: &[::diff::Result<&'a str>]) -> (String, String) {
+fn undiff_lines<'a>(diff: &[::diff::Result<&'a str>]) -> (String, String) {
     let (mut left, mut right) = (vec![], vec![]);
     for d in diff {
         match *d {
@@ -33,7 +33,7 @@ pub fn undiff_lines<'a>(diff: &[::diff::Result<&'a str>]) -> (String, String) {
     (left.join("\n"), right.join("\n"))
 }
 
-pub fn undiff_chars(diff: &[::diff::Result<char>]) -> (String, String) {
+fn undiff_chars(diff: &[::diff::Result<char>]) -> (String, String) {
     let (mut left, mut right) = (String::new(), String::new());
     for d in diff {
         match *d {
