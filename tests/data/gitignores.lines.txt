@@ -1,1115 +1,1115 @@
-i = 0, j = 0, len = 79
-i = 0, j = 1, len = 79
-i = 0, j = 2, len = 81
-i = 0, j = 3, len = 81
-i = 0, j = 4, len = 85
-i = 1, j = 0, len = 79
-i = 1, j = 1, len = 78
-i = 1, j = 2, len = 80
-i = 1, j = 3, len = 80
-i = 1, j = 4, len = 84
-i = 1, j = 5, len = 106
-i = 2, j = 0, len = 81
-i = 2, j = 1, len = 80
-i = 2, j = 2, len = 78
-i = 2, j = 3, len = 78
-i = 2, j = 4, len = 82
-i = 2, j = 5, len = 104
-i = 2, j = 6, len = 103
-i = 3, j = 0, len = 81
-i = 3, j = 1, len = 80
-i = 3, j = 2, len = 78
-i = 3, j = 3, len = 75
-i = 3, j = 4, len = 79
-i = 3, j = 5, len = 101
-i = 3, j = 6, len = 100
-i = 3, j = 7, len = 100
-i = 4, j = 0, len = 85
-i = 4, j = 1, len = 84
-i = 4, j = 2, len = 82
-i = 4, j = 3, len = 79
-i = 4, j = 4, len = 79
-i = 4, j = 5, len = 105
-i = 4, j = 6, len = 104
-i = 4, j = 7, len = 104
-i = 4, j = 8, len = 103
-i = 5, j = 0, len = 107
-i = 5, j = 1, len = 106
-i = 5, j = 2, len = 104
-i = 5, j = 3, len = 101
-i = 5, j = 4, len = 105
-i = 5, j = 5, len = 57
-i = 5, j = 6, len = 57
-i = 5, j = 7, len = 57
-i = 5, j = 8, len = 57
-i = 5, j = 9, len = 58
-i = 6, j = 1, len = 105
-i = 6, j = 2, len = 103
-i = 6, j = 3, len = 100
-i = 6, j = 4, len = 104
-i = 6, j = 5, len = 57
-i = 6, j = 6, len = 55
-i = 6, j = 7, len = 55
-i = 6, j = 8, len = 55
-i = 6, j = 9, len = 56
-i = 6, j = 10, len = 57
-i = 7, j = 2, len = 103
-i = 7, j = 3, len = 100
-i = 7, j = 4, len = 104
-i = 7, j = 5, len = 57
-i = 7, j = 6, len = 55
-i = 7, j = 7, len = 53
-i = 7, j = 8, len = 53
-i = 7, j = 9, len = 54
-i = 7, j = 10, len = 55
-i = 7, j = 11, len = 63
-i = 8, j = 3, len = 99
-i = 8, j = 4, len = 103
-i = 8, j = 5, len = 57
-i = 8, j = 6, len = 55
-i = 8, j = 7, len = 53
-i = 8, j = 8, len = 52
-i = 8, j = 9, len = 53
-i = 8, j = 10, len = 54
-i = 8, j = 11, len = 62
-i = 8, j = 12, len = 62
-i = 9, j = 4, len = 104
-i = 9, j = 5, len = 58
-i = 9, j = 6, len = 56
-i = 9, j = 7, len = 54
-i = 9, j = 8, len = 53
-i = 9, j = 9, len = 53
-i = 9, j = 10, len = 54
-i = 9, j = 11, len = 62
-i = 9, j = 12, len = 62
-i = 9, j = 13, len = 65
-i = 10, j = 5, len = 59
-i = 10, j = 6, len = 57
-i = 10, j = 7, len = 55
-i = 10, j = 8, len = 54
-i = 10, j = 9, len = 54
-i = 10, j = 10, len = 53
-i = 10, j = 11, len = 61
-i = 10, j = 12, len = 61
-i = 10, j = 13, len = 64
-i = 10, j = 14, len = 67
-i = 11, j = 6, len = 65
-i = 11, j = 7, len = 63
-i = 11, j = 8, len = 62
-i = 11, j = 9, len = 62
-i = 11, j = 10, len = 61
-i = 11, j = 11, len = 60
-i = 11, j = 12, len = 60
-i = 11, j = 13, len = 63
-i = 11, j = 14, len = 66
-i = 11, j = 15, len = 63
-i = 12, j = 7, len = 63
-i = 12, j = 8, len = 62
-i = 12, j = 9, len = 62
-i = 12, j = 10, len = 61
-i = 12, j = 11, len = 60
-i = 12, j = 12, len = 59
-i = 12, j = 13, len = 62
-i = 12, j = 14, len = 65
-i = 12, j = 15, len = 62
-i = 12, j = 16, len = 62
-i = 13, j = 8, len = 65
-i = 13, j = 9, len = 65
-i = 13, j = 10, len = 64
-i = 13, j = 11, len = 63
-i = 13, j = 12, len = 62
-i = 13, j = 13, len = 54
-i = 13, j = 14, len = 57
-i = 13, j = 15, len = 54
-i = 13, j = 16, len = 54
-i = 13, j = 17, len = 54
-i = 14, j = 9, len = 68
-i = 14, j = 10, len = 67
-i = 14, j = 11, len = 66
-i = 14, j = 12, len = 65
-i = 14, j = 13, len = 57
-i = 14, j = 14, len = 57
-i = 14, j = 15, len = 57
-i = 14, j = 16, len = 57
-i = 14, j = 17, len = 57
-i = 14, j = 18, len = 57
-i = 15, j = 10, len = 64
-i = 15, j = 11, len = 63
-i = 15, j = 12, len = 62
-i = 15, j = 13, len = 54
-i = 15, j = 14, len = 57
-i = 15, j = 15, len = 54
-i = 15, j = 16, len = 54
-i = 15, j = 17, len = 54
-i = 15, j = 18, len = 54
-i = 15, j = 19, len = 55
-i = 16, j = 11, len = 63
-i = 16, j = 12, len = 62
-i = 16, j = 13, len = 54
-i = 16, j = 14, len = 57
-i = 16, j = 15, len = 54
-i = 16, j = 16, len = 53
-i = 16, j = 17, len = 53
-i = 16, j = 18, len = 53
-i = 16, j = 19, len = 54
-i = 16, j = 20, len = 56
-i = 17, j = 12, len = 62
-i = 17, j = 13, len = 54
-i = 17, j = 14, len = 57
-i = 17, j = 15, len = 54
-i = 17, j = 16, len = 53
-i = 17, j = 17, len = 52
-i = 17, j = 18, len = 52
-i = 17, j = 19, len = 53
-i = 17, j = 20, len = 55
-i = 17, j = 21, len = 56
-i = 18, j = 13, len = 54
-i = 18, j = 14, len = 57
-i = 18, j = 15, len = 54
-i = 18, j = 16, len = 53
-i = 18, j = 17, len = 52
-i = 18, j = 18, len = 51
-i = 18, j = 19, len = 52
-i = 18, j = 20, len = 54
-i = 18, j = 21, len = 55
-i = 18, j = 22, len = 58
-i = 19, j = 14, len = 58
-i = 19, j = 15, len = 55
-i = 19, j = 16, len = 54
-i = 19, j = 17, len = 53
-i = 19, j = 18, len = 52
-i = 19, j = 19, len = 51
-i = 19, j = 20, len = 54
-i = 19, j = 21, len = 55
-i = 19, j = 22, len = 58
-i = 19, j = 23, len = 73
-i = 20, j = 15, len = 57
-i = 20, j = 16, len = 56
-i = 20, j = 17, len = 55
-i = 20, j = 18, len = 54
-i = 20, j = 19, len = 54
-i = 20, j = 20, len = 50
-i = 20, j = 21, len = 51
-i = 20, j = 22, len = 54
-i = 20, j = 23, len = 70
-i = 20, j = 24, len = 69
-i = 21, j = 16, len = 57
-i = 21, j = 17, len = 56
-i = 21, j = 18, len = 55
-i = 21, j = 19, len = 55
-i = 21, j = 20, len = 51
-i = 21, j = 21, len = 50
-i = 21, j = 22, len = 53
-i = 21, j = 23, len = 69
-i = 21, j = 24, len = 69
-i = 21, j = 25, len = 70
-i = 22, j = 17, len = 59
-i = 22, j = 18, len = 58
-i = 22, j = 19, len = 58
-i = 22, j = 20, len = 54
-i = 22, j = 21, len = 53
-i = 22, j = 22, len = 53
-i = 22, j = 23, len = 69
-i = 22, j = 24, len = 69
-i = 22, j = 25, len = 70
-i = 22, j = 26, len = 70
-i = 23, j = 18, len = 73
-i = 23, j = 19, len = 73
-i = 23, j = 20, len = 70
-i = 23, j = 21, len = 69
-i = 23, j = 22, len = 69
-i = 23, j = 23, len = 69
-i = 23, j = 24, len = 69
-i = 23, j = 25, len = 70
-i = 23, j = 26, len = 70
-i = 23, j = 27, len = 71
-i = 24, j = 19, len = 72
-i = 24, j = 20, len = 69
-i = 24, j = 21, len = 69
-i = 24, j = 22, len = 69
-i = 24, j = 23, len = 69
-i = 24, j = 24, len = 65
-i = 24, j = 25, len = 66
-i = 24, j = 26, len = 66
-i = 24, j = 27, len = 67
-i = 24, j = 28, len = 67
-i = 25, j = 20, len = 70
-i = 25, j = 21, len = 70
-i = 25, j = 22, len = 70
-i = 25, j = 23, len = 70
-i = 25, j = 24, len = 66
-i = 25, j = 25, len = 66
-i = 25, j = 26, len = 66
-i = 25, j = 27, len = 67
-i = 25, j = 28, len = 67
-i = 25, j = 29, len = 67
-i = 26, j = 21, len = 70
-i = 26, j = 22, len = 70
-i = 26, j = 23, len = 70
-i = 26, j = 24, len = 66
-i = 26, j = 25, len = 66
-i = 26, j = 26, len = 65
-i = 26, j = 27, len = 67
-i = 26, j = 28, len = 66
-i = 26, j = 29, len = 66
-i = 26, j = 30, len = 112
-i = 27, j = 22, len = 71
-i = 27, j = 23, len = 71
-i = 27, j = 24, len = 67
-i = 27, j = 25, len = 67
-i = 27, j = 26, len = 67
-i = 27, j = 27, len = 66
-i = 27, j = 28, len = 66
-i = 27, j = 29, len = 66
-i = 27, j = 30, len = 112
-i = 27, j = 31, len = 114
-i = 28, j = 23, len = 71
-i = 28, j = 24, len = 67
-i = 28, j = 25, len = 67
-i = 28, j = 26, len = 66
-i = 28, j = 27, len = 66
-i = 28, j = 28, len = 65
-i = 28, j = 29, len = 65
-i = 28, j = 30, len = 111
-i = 28, j = 31, len = 113
-i = 28, j = 32, len = 120
-i = 29, j = 24, len = 67
-i = 29, j = 25, len = 67
-i = 29, j = 26, len = 66
-i = 29, j = 27, len = 66
-i = 29, j = 28, len = 65
-i = 29, j = 29, len = 64
-i = 29, j = 30, len = 110
-i = 29, j = 31, len = 112
-i = 29, j = 32, len = 119
-i = 29, j = 33, len = 119
-i = 30, j = 25, len = 113
-i = 30, j = 26, len = 112
-i = 30, j = 27, len = 112
-i = 30, j = 28, len = 111
-i = 30, j = 29, len = 110
-i = 30, j = 30, len = 110
-i = 30, j = 31, len = 112
-i = 30, j = 32, len = 119
-i = 30, j = 33, len = 119
-i = 30, j = 34, len = 120
-i = 31, j = 26, len = 114
-i = 31, j = 27, len = 114
-i = 31, j = 28, len = 113
-i = 31, j = 29, len = 112
-i = 31, j = 30, len = 112
-i = 31, j = 31, len = 107
-i = 31, j = 32, len = 114
-i = 31, j = 33, len = 114
-i = 31, j = 34, len = 115
-i = 31, j = 35, len = 115
-i = 32, j = 27, len = 121
-i = 32, j = 28, len = 120
-i = 32, j = 29, len = 119
-i = 32, j = 30, len = 119
-i = 32, j = 31, len = 114
-i = 32, j = 32, len = 107
-i = 32, j = 33, len = 107
-i = 32, j = 34, len = 108
-i = 32, j = 35, len = 108
-i = 32, j = 36, len = 108
-i = 33, j = 28, len = 120
-i = 33, j = 29, len = 119
-i = 33, j = 30, len = 119
-i = 33, j = 31, len = 114
-i = 33, j = 32, len = 107
-i = 33, j = 33, len = 106
-i = 33, j = 34, len = 107
-i = 33, j = 35, len = 107
-i = 33, j = 36, len = 107
-i = 33, j = 37, len = 107
-i = 34, j = 29, len = 120
-i = 34, j = 30, len = 120
-i = 34, j = 31, len = 115
-i = 34, j = 32, len = 108
-i = 34, j = 33, len = 107
-i = 34, j = 34, len = 107
-i = 34, j = 35, len = 107
-i = 34, j = 36, len = 107
-i = 34, j = 37, len = 107
-i = 34, j = 38, len = 107
-i = 35, j = 30, len = 120
-i = 35, j = 31, len = 115
-i = 35, j = 32, len = 108
-i = 35, j = 33, len = 107
-i = 35, j = 34, len = 107
-i = 35, j = 35, len = 105
-i = 35, j = 36, len = 105
-i = 35, j = 37, len = 105
-i = 35, j = 38, len = 105
-i = 35, j = 39, len = 111
-i = 36, j = 31, len = 115
-i = 36, j = 32, len = 108
-i = 36, j = 33, len = 107
-i = 36, j = 34, len = 107
-i = 36, j = 35, len = 105
-i = 36, j = 36, len = 104
-i = 36, j = 37, len = 104
-i = 36, j = 38, len = 104
-i = 36, j = 39, len = 110
-i = 36, j = 40, len = 110
-i = 37, j = 32, len = 108
-i = 37, j = 33, len = 107
-i = 37, j = 34, len = 107
-i = 37, j = 35, len = 105
-i = 37, j = 36, len = 104
-i = 37, j = 37, len = 103
-i = 37, j = 38, len = 103
-i = 37, j = 39, len = 109
-i = 37, j = 40, len = 109
-i = 37, j = 41, len = 109
-i = 38, j = 33, len = 107
-i = 38, j = 34, len = 107
-i = 38, j = 35, len = 105
-i = 38, j = 36, len = 104
-i = 38, j = 37, len = 103
-i = 38, j = 38, len = 102
-i = 38, j = 39, len = 108
-i = 38, j = 40, len = 108
-i = 38, j = 41, len = 108
-i = 38, j = 42, len = 116
-i = 39, j = 34, len = 113
-i = 39, j = 35, len = 111
-i = 39, j = 36, len = 110
-i = 39, j = 37, len = 109
-i = 39, j = 38, len = 108
-i = 39, j = 39, len = 101
-i = 39, j = 40, len = 101
-i = 39, j = 41, len = 101
-i = 39, j = 42, len = 109
-i = 39, j = 43, len = 101
-i = 40, j = 35, len = 111
-i = 40, j = 36, len = 110
-i = 40, j = 37, len = 109
-i = 40, j = 38, len = 108
-i = 40, j = 39, len = 101
-i = 40, j = 40, len = 100
-i = 40, j = 41, len = 100
-i = 40, j = 42, len = 108
-i = 40, j = 43, len = 100
-i = 40, j = 44, len = 108
-i = 41, j = 36, len = 110
-i = 41, j = 37, len = 109
-i = 41, j = 38, len = 108
-i = 41, j = 39, len = 101
-i = 41, j = 40, len = 100
-i = 41, j = 41, len = 99
-i = 41, j = 42, len = 107
-i = 41, j = 43, len = 99
-i = 41, j = 44, len = 107
-i = 41, j = 45, len = 106
-i = 42, j = 37, len = 117
-i = 42, j = 38, len = 116
-i = 42, j = 39, len = 109
-i = 42, j = 40, len = 108
-i = 42, j = 41, len = 107
-i = 42, j = 42, len = 99
-i = 42, j = 43, len = 107
-i = 42, j = 44, len = 99
-i = 42, j = 45, len = 99
-i = 42, j = 46, len = 99
-i = 43, j = 38, len = 108
-i = 43, j = 39, len = 101
-i = 43, j = 40, len = 100
-i = 43, j = 41, len = 99
-i = 43, j = 42, len = 107
-i = 43, j = 43, len = 98
-i = 43, j = 44, len = 106
-i = 43, j = 45, len = 105
-i = 43, j = 46, len = 104
-i = 43, j = 47, len = 103
-i = 44, j = 39, len = 109
-i = 44, j = 40, len = 108
-i = 44, j = 41, len = 107
-i = 44, j = 42, len = 99
-i = 44, j = 43, len = 106
-i = 44, j = 44, len = 98
-i = 44, j = 45, len = 98
-i = 44, j = 46, len = 98
-i = 44, j = 47, len = 98
-i = 44, j = 48, len = 98
-i = 45, j = 40, len = 107
-i = 45, j = 41, len = 106
-i = 45, j = 42, len = 99
-i = 45, j = 43, len = 105
-i = 45, j = 44, len = 98
-i = 45, j = 45, len = 97
-i = 45, j = 46, len = 97
-i = 45, j = 47, len = 97
-i = 45, j = 48, len = 97
-i = 45, j = 49, len = 97
-i = 46, j = 41, len = 105
-i = 46, j = 42, len = 99
-i = 46, j = 43, len = 104
-i = 46, j = 44, len = 98
-i = 46, j = 45, len = 97
-i = 46, j = 46, len = 96
-i = 46, j = 47, len = 96
-i = 46, j = 48, len = 96
-i = 46, j = 49, len = 96
-i = 46, j = 50, len = 100
-i = 47, j = 42, len = 99
-i = 47, j = 43, len = 103
-i = 47, j = 44, len = 98
-i = 47, j = 45, len = 97
-i = 47, j = 46, len = 96
-i = 47, j = 47, len = 95
-i = 47, j = 48, len = 95
-i = 47, j = 49, len = 95
-i = 47, j = 50, len = 99
-i = 47, j = 51, len = 159
-i = 48, j = 43, len = 103
-i = 48, j = 44, len = 98
-i = 48, j = 45, len = 97
-i = 48, j = 46, len = 96
-i = 48, j = 47, len = 95
-i = 48, j = 48, len = 94
-i = 48, j = 49, len = 94
-i = 48, j = 50, len = 98
-i = 48, j = 51, len = 158
-i = 48, j = 52, len = 159
-i = 49, j = 44, len = 98
-i = 49, j = 45, len = 97
-i = 49, j = 46, len = 96
-i = 49, j = 47, len = 95
-i = 49, j = 48, len = 94
-i = 49, j = 49, len = 88
-i = 49, j = 50, len = 92
-i = 49, j = 51, len = 152
-i = 49, j = 52, len = 153
-i = 49, j = 53, len = 153
-i = 50, j = 45, len = 101
-i = 50, j = 46, len = 100
-i = 50, j = 47, len = 99
-i = 50, j = 48, len = 98
-i = 50, j = 49, len = 92
-i = 50, j = 50, len = 90
-i = 50, j = 51, len = 154
-i = 50, j = 52, len = 154
-i = 50, j = 53, len = 154
-i = 50, j = 54, len = 154
-i = 51, j = 46, len = 160
-i = 51, j = 47, len = 159
-i = 51, j = 48, len = 158
-i = 51, j = 49, len = 152
-i = 51, j = 50, len = 154
-i = 51, j = 51, len = 90
-i = 51, j = 52, len = 91
-i = 51, j = 53, len = 92
-i = 51, j = 54, len = 93
-i = 51, j = 55, len = 93
-i = 52, j = 47, len = 160
-i = 52, j = 48, len = 159
-i = 52, j = 49, len = 153
-i = 52, j = 50, len = 154
-i = 52, j = 51, len = 91
-i = 52, j = 52, len = 90
-i = 52, j = 53, len = 91
-i = 52, j = 54, len = 92
-i = 52, j = 55, len = 92
-i = 52, j = 56, len = 92
-i = 53, j = 48, len = 159
-i = 53, j = 49, len = 153
-i = 53, j = 50, len = 154
-i = 53, j = 51, len = 92
-i = 53, j = 52, len = 91
-i = 53, j = 53, len = 90
-i = 53, j = 54, len = 91
-i = 53, j = 55, len = 91
-i = 53, j = 56, len = 91
-i = 53, j = 57, len = 92
-i = 54, j = 49, len = 153
-i = 54, j = 50, len = 154
-i = 54, j = 51, len = 93
-i = 54, j = 52, len = 92
-i = 54, j = 53, len = 91
-i = 54, j = 54, len = 91
-i = 54, j = 55, len = 91
-i = 54, j = 56, len = 92
-i = 54, j = 57, len = 93
-i = 54, j = 58, len = 107
-i = 55, j = 50, len = 153
-i = 55, j = 51, len = 93
-i = 55, j = 52, len = 92
-i = 55, j = 53, len = 91
-i = 55, j = 54, len = 91
-i = 55, j = 55, len = 90
-i = 55, j = 56, len = 91
-i = 55, j = 57, len = 92
-i = 55, j = 58, len = 106
-i = 55, j = 59, len = 105
-i = 56, j = 51, len = 93
-i = 56, j = 52, len = 92
-i = 56, j = 53, len = 91
-i = 56, j = 54, len = 92
-i = 56, j = 55, len = 91
-i = 56, j = 56, len = 90
-i = 56, j = 57, len = 91
-i = 56, j = 58, len = 105
-i = 56, j = 59, len = 104
-i = 56, j = 60, len = 103
-i = 57, j = 52, len = 93
-i = 57, j = 53, len = 92
-i = 57, j = 54, len = 93
-i = 57, j = 55, len = 92
-i = 57, j = 56, len = 91
-i = 57, j = 57, len = 91
-i = 57, j = 58, len = 105
-i = 57, j = 59, len = 104
-i = 57, j = 60, len = 103
-i = 57, j = 61, len = 101
-i = 58, j = 53, len = 106
-i = 58, j = 54, len = 107
-i = 58, j = 55, len = 106
-i = 58, j = 56, len = 105
-i = 58, j = 57, len = 105
-i = 58, j = 58, len = 104
-i = 58, j = 59, len = 104
-i = 58, j = 60, len = 104
-i = 58, j = 61, len = 104
-i = 58, j = 62, len = 104
-i = 59, j = 54, len = 106
-i = 59, j = 55, len = 105
-i = 59, j = 56, len = 104
-i = 59, j = 57, len = 104
-i = 59, j = 58, len = 104
-i = 59, j = 59, len = 103
-i = 59, j = 60, len = 103
-i = 59, j = 61, len = 103
-i = 59, j = 62, len = 103
-i = 59, j = 63, len = 103
-i = 60, j = 55, len = 104
-i = 60, j = 56, len = 103
-i = 60, j = 57, len = 103
-i = 60, j = 58, len = 104
-i = 60, j = 59, len = 103
-i = 60, j = 60, len = 102
-i = 60, j = 61, len = 102
-i = 60, j = 62, len = 102
-i = 60, j = 63, len = 102
-i = 60, j = 64, len = 102
-i = 61, j = 56, len = 101
-i = 61, j = 57, len = 101
-i = 61, j = 58, len = 104
-i = 61, j = 59, len = 103
-i = 61, j = 60, len = 102
-i = 61, j = 61, len = 100
-i = 61, j = 62, len = 100
-i = 61, j = 63, len = 100
-i = 61, j = 64, len = 100
-i = 61, j = 65, len = 100
-i = 62, j = 57, len = 100
-i = 62, j = 58, len = 104
-i = 62, j = 59, len = 103
-i = 62, j = 60, len = 102
-i = 62, j = 61, len = 100
-i = 62, j = 62, len = 99
-i = 62, j = 63, len = 99
-i = 62, j = 64, len = 99
-i = 62, j = 65, len = 99
-i = 62, j = 66, len = 99
-i = 63, j = 58, len = 104
-i = 63, j = 59, len = 103
-i = 63, j = 60, len = 102
-i = 63, j = 61, len = 100
-i = 63, j = 62, len = 99
-i = 63, j = 63, len = 98
-i = 63, j = 64, len = 98
-i = 63, j = 65, len = 98
-i = 63, j = 66, len = 98
-i = 63, j = 67, len = 99
-i = 64, j = 59, len = 103
-i = 64, j = 60, len = 102
-i = 64, j = 61, len = 100
-i = 64, j = 62, len = 99
-i = 64, j = 63, len = 98
-i = 64, j = 64, len = 97
-i = 64, j = 65, len = 97
-i = 64, j = 66, len = 97
-i = 64, j = 67, len = 98
-i = 64, j = 68, len = 98
-i = 65, j = 60, len = 102
-i = 65, j = 61, len = 100
-i = 65, j = 62, len = 99
-i = 65, j = 63, len = 98
-i = 65, j = 64, len = 97
-i = 65, j = 65, len = 95
-i = 65, j = 66, len = 95
-i = 65, j = 67, len = 96
-i = 65, j = 68, len = 96
-i = 65, j = 69, len = 96
-i = 66, j = 61, len = 100
-i = 66, j = 62, len = 99
-i = 66, j = 63, len = 98
-i = 66, j = 64, len = 97
-i = 66, j = 65, len = 95
-i = 66, j = 66, len = 93
-i = 66, j = 67, len = 94
-i = 66, j = 68, len = 94
-i = 66, j = 69, len = 94
-i = 66, j = 70, len = 94
-i = 67, j = 62, len = 100
-i = 67, j = 63, len = 99
-i = 67, j = 64, len = 98
-i = 67, j = 65, len = 96
-i = 67, j = 66, len = 94
-i = 67, j = 67, len = 93
-i = 67, j = 68, len = 93
-i = 67, j = 69, len = 93
-i = 67, j = 70, len = 93
-i = 67, j = 71, len = 94
-i = 68, j = 63, len = 99
-i = 68, j = 64, len = 98
-i = 68, j = 65, len = 96
-i = 68, j = 66, len = 94
-i = 68, j = 67, len = 93
-i = 68, j = 68, len = 92
-i = 68, j = 69, len = 92
-i = 68, j = 70, len = 92
-i = 68, j = 71, len = 93
-i = 68, j = 72, len = 94
-i = 69, j = 64, len = 98
-i = 69, j = 65, len = 96
-i = 69, j = 66, len = 94
-i = 69, j = 67, len = 93
-i = 69, j = 68, len = 92
-i = 69, j = 69, len = 91
-i = 69, j = 70, len = 91
-i = 69, j = 71, len = 92
-i = 69, j = 72, len = 93
-i = 69, j = 73, len = 93
-i = 70, j = 65, len = 96
-i = 70, j = 66, len = 94
-i = 70, j = 67, len = 93
-i = 70, j = 68, len = 92
-i = 70, j = 69, len = 91
-i = 70, j = 70, len = 90
-i = 70, j = 71, len = 91
-i = 70, j = 72, len = 92
-i = 70, j = 73, len = 92
-i = 70, j = 74, len = 92
-i = 71, j = 66, len = 95
-i = 71, j = 67, len = 94
-i = 71, j = 68, len = 93
-i = 71, j = 69, len = 92
-i = 71, j = 70, len = 91
-i = 71, j = 71, len = 90
-i = 71, j = 72, len = 91
-i = 71, j = 73, len = 91
-i = 71, j = 74, len = 91
-i = 71, j = 75, len = 91
-i = 72, j = 67, len = 95
-i = 72, j = 68, len = 94
-i = 72, j = 69, len = 93
-i = 72, j = 70, len = 92
-i = 72, j = 71, len = 91
-i = 72, j = 72, len = 90
-i = 72, j = 73, len = 90
-i = 72, j = 74, len = 90
-i = 72, j = 75, len = 90
-i = 72, j = 76, len = 90
-i = 73, j = 68, len = 94
-i = 73, j = 69, len = 93
-i = 73, j = 70, len = 92
-i = 73, j = 71, len = 91
-i = 73, j = 72, len = 90
-i = 73, j = 73, len = 89
-i = 73, j = 74, len = 89
-i = 73, j = 75, len = 89
-i = 73, j = 76, len = 89
-i = 73, j = 77, len = 89
-i = 74, j = 69, len = 93
-i = 74, j = 70, len = 92
-i = 74, j = 71, len = 91
-i = 74, j = 72, len = 90
-i = 74, j = 73, len = 89
-i = 74, j = 74, len = 88
-i = 74, j = 75, len = 88
-i = 74, j = 76, len = 88
-i = 74, j = 77, len = 88
-i = 74, j = 78, len = 88
-i = 75, j = 70, len = 92
-i = 75, j = 71, len = 91
-i = 75, j = 72, len = 90
-i = 75, j = 73, len = 89
-i = 75, j = 74, len = 88
-i = 75, j = 75, len = 83
-i = 75, j = 76, len = 83
-i = 75, j = 77, len = 83
-i = 75, j = 78, len = 83
-i = 75, j = 79, len = 83
-i = 76, j = 71, len = 91
-i = 76, j = 72, len = 90
-i = 76, j = 73, len = 89
-i = 76, j = 74, len = 88
-i = 76, j = 75, len = 83
-i = 76, j = 76, len = 82
-i = 76, j = 77, len = 82
-i = 76, j = 78, len = 82
-i = 76, j = 79, len = 82
-i = 76, j = 80, len = 83
-i = 77, j = 72, len = 90
-i = 77, j = 73, len = 89
-i = 77, j = 74, len = 88
-i = 77, j = 75, len = 83
-i = 77, j = 76, len = 82
-i = 77, j = 77, len = 81
-i = 77, j = 78, len = 81
-i = 77, j = 79, len = 81
-i = 77, j = 80, len = 82
-i = 77, j = 81, len = 83
-i = 78, j = 73, len = 89
-i = 78, j = 74, len = 88
-i = 78, j = 75, len = 83
-i = 78, j = 76, len = 82
-i = 78, j = 77, len = 81
-i = 78, j = 78, len = 80
-i = 78, j = 79, len = 80
-i = 78, j = 80, len = 81
-i = 78, j = 81, len = 82
-i = 78, j = 82, len = 82
-i = 79, j = 74, len = 88
-i = 79, j = 75, len = 83
-i = 79, j = 76, len = 82
-i = 79, j = 77, len = 81
-i = 79, j = 78, len = 80
-i = 79, j = 79, len = 79
-i = 79, j = 80, len = 80
-i = 79, j = 81, len = 81
-i = 79, j = 82, len = 81
-i = 79, j = 83, len = 81
-i = 80, j = 75, len = 84
-i = 80, j = 76, len = 83
-i = 80, j = 77, len = 82
-i = 80, j = 78, len = 81
-i = 80, j = 79, len = 80
-i = 80, j = 80, len = 80
-i = 80, j = 81, len = 81
-i = 80, j = 82, len = 81
-i = 80, j = 83, len = 81
-i = 80, j = 84, len = 81
-i = 81, j = 76, len = 84
-i = 81, j = 77, len = 83
-i = 81, j = 78, len = 82
-i = 81, j = 79, len = 81
-i = 81, j = 80, len = 81
-i = 81, j = 81, len = 81
-i = 81, j = 82, len = 81
-i = 81, j = 83, len = 81
-i = 81, j = 84, len = 81
-i = 81, j = 85, len = 81
-i = 82, j = 77, len = 83
-i = 82, j = 78, len = 82
-i = 82, j = 79, len = 81
-i = 82, j = 80, len = 81
-i = 82, j = 81, len = 81
-i = 82, j = 82, len = 80
-i = 82, j = 83, len = 80
-i = 82, j = 84, len = 80
-i = 82, j = 85, len = 80
-i = 82, j = 86, len = 80
-i = 83, j = 78, len = 82
-i = 83, j = 79, len = 81
-i = 83, j = 80, len = 81
-i = 83, j = 81, len = 81
-i = 83, j = 82, len = 80
-i = 83, j = 83, len = 78
-i = 83, j = 84, len = 78
-i = 83, j = 85, len = 78
-i = 83, j = 86, len = 78
-i = 83, j = 87, len = 79
-i = 84, j = 79, len = 81
-i = 84, j = 80, len = 81
-i = 84, j = 81, len = 81
-i = 84, j = 82, len = 80
-i = 84, j = 83, len = 78
-i = 84, j = 84, len = 77
-i = 84, j = 85, len = 77
-i = 84, j = 86, len = 77
-i = 84, j = 87, len = 78
-i = 84, j = 88, len = 78
-i = 85, j = 80, len = 81
-i = 85, j = 81, len = 81
-i = 85, j = 82, len = 80
-i = 85, j = 83, len = 78
-i = 85, j = 84, len = 77
-i = 85, j = 85, len = 74
-i = 85, j = 86, len = 74
-i = 85, j = 87, len = 75
-i = 85, j = 88, len = 75
-i = 85, j = 89, len = 75
-i = 86, j = 81, len = 81
-i = 86, j = 82, len = 80
-i = 86, j = 83, len = 78
-i = 86, j = 84, len = 77
-i = 86, j = 85, len = 74
-i = 86, j = 86, len = 73
-i = 86, j = 87, len = 74
-i = 86, j = 88, len = 74
-i = 86, j = 89, len = 74
-i = 86, j = 90, len = 74
-i = 87, j = 82, len = 81
-i = 87, j = 83, len = 79
-i = 87, j = 84, len = 78
-i = 87, j = 85, len = 75
-i = 87, j = 86, len = 74
-i = 87, j = 87, len = 68
-i = 87, j = 88, len = 69
-i = 87, j = 89, len = 69
-i = 87, j = 90, len = 69
-i = 87, j = 91, len = 70
-i = 88, j = 83, len = 79
-i = 88, j = 84, len = 78
-i = 88, j = 85, len = 75
-i = 88, j = 86, len = 74
-i = 88, j = 87, len = 69
-i = 88, j = 88, len = 68
-i = 88, j = 89, len = 68
-i = 88, j = 90, len = 68
-i = 88, j = 91, len = 69
-i = 88, j = 92, len = 68
-i = 89, j = 84, len = 78
-i = 89, j = 85, len = 75
-i = 89, j = 86, len = 74
-i = 89, j = 87, len = 69
-i = 89, j = 88, len = 68
-i = 89, j = 89, len = 61
-i = 89, j = 90, len = 61
-i = 89, j = 91, len = 62
-i = 89, j = 92, len = 61
-i = 89, j = 93, len = 62
-i = 90, j = 85, len = 75
-i = 90, j = 86, len = 74
-i = 90, j = 87, len = 69
-i = 90, j = 88, len = 68
-i = 90, j = 89, len = 61
-i = 90, j = 90, len = 59
-i = 90, j = 91, len = 60
-i = 90, j = 92, len = 59
-i = 90, j = 93, len = 60
-i = 90, j = 94, len = 59
-i = 91, j = 86, len = 75
-i = 91, j = 87, len = 70
-i = 91, j = 88, len = 69
-i = 91, j = 89, len = 62
-i = 91, j = 90, len = 60
-i = 91, j = 91, len = 57
-i = 91, j = 92, len = 58
-i = 91, j = 93, len = 59
-i = 91, j = 94, len = 58
-i = 91, j = 95, len = 58
-i = 92, j = 87, len = 69
-i = 92, j = 88, len = 68
-i = 92, j = 89, len = 61
-i = 92, j = 90, len = 59
-i = 92, j = 91, len = 58
-i = 92, j = 92, len = 57
-i = 92, j = 93, len = 58
-i = 92, j = 94, len = 57
-i = 92, j = 95, len = 57
-i = 92, j = 96, len = 57
-i = 93, j = 88, len = 69
-i = 93, j = 89, len = 62
-i = 93, j = 90, len = 60
-i = 93, j = 91, len = 59
-i = 93, j = 92, len = 58
-i = 93, j = 93, len = 56
-i = 93, j = 94, len = 56
-i = 93, j = 95, len = 56
-i = 93, j = 96, len = 56
-i = 93, j = 97, len = 56
-i = 94, j = 89, len = 61
-i = 94, j = 90, len = 59
-i = 94, j = 91, len = 58
-i = 94, j = 92, len = 57
-i = 94, j = 93, len = 56
-i = 94, j = 94, len = 55
-i = 94, j = 95, len = 55
-i = 94, j = 96, len = 55
-i = 94, j = 97, len = 55
-i = 94, j = 98, len = 58
-i = 95, j = 90, len = 59
-i = 95, j = 91, len = 58
-i = 95, j = 92, len = 57
-i = 95, j = 93, len = 56
-i = 95, j = 94, len = 55
-i = 95, j = 95, len = 54
-i = 95, j = 96, len = 54
-i = 95, j = 97, len = 54
-i = 95, j = 98, len = 57
-i = 95, j = 99, len = 54
-i = 96, j = 91, len = 58
-i = 96, j = 92, len = 57
-i = 96, j = 93, len = 56
-i = 96, j = 94, len = 55
-i = 96, j = 95, len = 54
-i = 96, j = 96, len = 53
-i = 96, j = 97, len = 53
-i = 96, j = 98, len = 56
-i = 96, j = 99, len = 53
-i = 96, j = 100, len = 53
-i = 97, j = 92, len = 57
-i = 97, j = 93, len = 56
-i = 97, j = 94, len = 55
-i = 97, j = 95, len = 54
-i = 97, j = 96, len = 53
-i = 97, j = 97, len = 52
-i = 97, j = 98, len = 55
-i = 97, j = 99, len = 52
-i = 97, j = 100, len = 52
-i = 97, j = 101, len = 52
-i = 98, j = 93, len = 59
-i = 98, j = 94, len = 58
-i = 98, j = 95, len = 57
-i = 98, j = 96, len = 56
-i = 98, j = 97, len = 55
-i = 98, j = 98, len = 52
-i = 98, j = 99, len = 52
-i = 98, j = 100, len = 52
-i = 98, j = 101, len = 52
-i = 98, j = 102, len = 54
-i = 99, j = 94, len = 55
-i = 99, j = 95, len = 54
-i = 99, j = 96, len = 53
-i = 99, j = 97, len = 52
-i = 99, j = 98, len = 52
-i = 99, j = 99, len = 47
-i = 99, j = 100, len = 47
-i = 99, j = 101, len = 47
-i = 99, j = 102, len = 49
-i = 99, j = 103, len = 49
-i = 100, j = 95, len = 54
-i = 100, j = 96, len = 53
-i = 100, j = 97, len = 52
-i = 100, j = 98, len = 52
-i = 100, j = 99, len = 47
-i = 100, j = 100, len = 44
-i = 100, j = 101, len = 44
-i = 100, j = 102, len = 46
-i = 100, j = 103, len = 46
-i = 100, j = 104, len = 44
-i = 101, j = 96, len = 53
-i = 101, j = 97, len = 52
-i = 101, j = 98, len = 52
-i = 101, j = 99, len = 47
-i = 101, j = 100, len = 44
-i = 101, j = 101, len = 43
-i = 101, j = 102, len = 45
-i = 101, j = 103, len = 45
-i = 101, j = 104, len = 43
-i = 101, j = 105, len = 43
-i = 102, j = 97, len = 54
-i = 102, j = 98, len = 54
-i = 102, j = 99, len = 49
-i = 102, j = 100, len = 46
-i = 102, j = 101, len = 45
-i = 102, j = 102, len = 43
-i = 102, j = 103, len = 43
-i = 102, j = 104, len = 43
-i = 102, j = 105, len = 43
-i = 102, j = 106, len = 43
-i = 103, j = 98, len = 54
-i = 103, j = 99, len = 49
-i = 103, j = 100, len = 46
-i = 103, j = 101, len = 45
-i = 103, j = 102, len = 43
-i = 103, j = 103, len = 42
-i = 103, j = 104, len = 42
-i = 103, j = 105, len = 42
-i = 103, j = 106, len = 42
-i = 103, j = 107, len = 42
-i = 104, j = 99, len = 47
-i = 104, j = 100, len = 44
-i = 104, j = 101, len = 43
-i = 104, j = 102, len = 43
-i = 104, j = 103, len = 42
-i = 104, j = 104, len = 40
-i = 104, j = 105, len = 40
-i = 104, j = 106, len = 40
-i = 104, j = 107, len = 40
-i = 104, j = 108, len = 40
-i = 105, j = 100, len = 44
-i = 105, j = 101, len = 43
-i = 105, j = 102, len = 43
-i = 105, j = 103, len = 42
-i = 105, j = 104, len = 40
-i = 105, j = 105, len = 38
-i = 105, j = 106, len = 38
-i = 105, j = 107, len = 38
-i = 105, j = 108, len = 38
-i = 105, j = 109, len = 38
-i = 106, j = 101, len = 43
-i = 106, j = 102, len = 43
-i = 106, j = 103, len = 42
-i = 106, j = 104, len = 40
-i = 106, j = 105, len = 38
-i = 106, j = 106, len = 36
-i = 106, j = 107, len = 36
-i = 106, j = 108, len = 36
-i = 106, j = 109, len = 36
-i = 106, j = 110, len = 36
-i = 107, j = 102, len = 43
-i = 107, j = 103, len = 42
-i = 107, j = 104, len = 40
-i = 107, j = 105, len = 38
-i = 107, j = 106, len = 36
-i = 107, j = 107, len = 35
-i = 107, j = 108, len = 35
-i = 107, j = 109, len = 35
-i = 107, j = 110, len = 35
-i = 107, j = 111, len = 35
-i = 108, j = 103, len = 42
-i = 108, j = 104, len = 40
-i = 108, j = 105, len = 38
-i = 108, j = 106, len = 36
-i = 108, j = 107, len = 35
-i = 108, j = 108, len = 34
-i = 108, j = 109, len = 34
-i = 108, j = 110, len = 34
-i = 108, j = 111, len = 34
-i = 108, j = 112, len = 34
-i = 109, j = 104, len = 40
-i = 109, j = 105, len = 38
-i = 109, j = 106, len = 36
-i = 109, j = 107, len = 35
-i = 109, j = 108, len = 34
-i = 109, j = 109, len = 31
-i = 109, j = 110, len = 31
-i = 109, j = 111, len = 31
-i = 109, j = 112, len = 31
-i = 109, j = 113, len = 31
-i = 110, j = 105, len = 38
-i = 110, j = 106, len = 36
-i = 110, j = 107, len = 35
-i = 110, j = 108, len = 34
-i = 110, j = 109, len = 31
-i = 110, j = 110, len = 30
-i = 110, j = 111, len = 30
-i = 110, j = 112, len = 30
-i = 110, j = 113, len = 30
-i = 111, j = 106, len = 36
-i = 111, j = 107, len = 35
-i = 111, j = 108, len = 34
-i = 111, j = 109, len = 31
-i = 111, j = 110, len = 30
-i = 111, j = 111, len = 26
-i = 111, j = 112, len = 26
-i = 111, j = 113, len = 26
-i = 112, j = 107, len = 35
-i = 112, j = 108, len = 34
-i = 112, j = 109, len = 31
-i = 112, j = 110, len = 30
-i = 112, j = 111, len = 26
-i = 112, j = 112, len = 12
-i = 112, j = 113, len = 12
-i = 113, j = 108, len = 34
-i = 113, j = 109, len = 31
-i = 113, j = 110, len = 30
-i = 113, j = 111, len = 26
-i = 113, j = 112, len = 12
-i = 113, j = 113, len = 10
+i = 0, j = 0, left = 0, both = 79, right = 0
+i = 0, j = 1, left = 1, both = 78, right = 0
+i = 0, j = 2, left = 3, both = 76, right = 2
+i = 0, j = 3, left = 6, both = 73, right = 2
+i = 0, j = 4, left = 6, both = 73, right = 6
+i = 1, j = 0, left = 0, both = 78, right = 1
+i = 1, j = 1, left = 0, both = 78, right = 0
+i = 1, j = 2, left = 2, both = 76, right = 2
+i = 1, j = 3, left = 5, both = 73, right = 2
+i = 1, j = 4, left = 5, both = 73, right = 6
+i = 1, j = 5, left = 49, both = 29, right = 28
+i = 2, j = 0, left = 2, both = 76, right = 3
+i = 2, j = 1, left = 2, both = 76, right = 2
+i = 2, j = 2, left = 0, both = 78, right = 0
+i = 2, j = 3, left = 3, both = 75, right = 0
+i = 2, j = 4, left = 3, both = 75, right = 4
+i = 2, j = 5, left = 47, both = 31, right = 26
+i = 2, j = 6, left = 48, both = 30, right = 25
+i = 3, j = 0, left = 2, both = 73, right = 6
+i = 3, j = 1, left = 2, both = 73, right = 5
+i = 3, j = 2, left = 0, both = 75, right = 3
+i = 3, j = 3, left = 0, both = 75, right = 0
+i = 3, j = 4, left = 0, both = 75, right = 4
+i = 3, j = 5, left = 44, both = 31, right = 26
+i = 3, j = 6, left = 45, both = 30, right = 25
+i = 3, j = 7, left = 47, both = 28, right = 25
+i = 4, j = 0, left = 6, both = 73, right = 6
+i = 4, j = 1, left = 6, both = 73, right = 5
+i = 4, j = 2, left = 4, both = 75, right = 3
+i = 4, j = 3, left = 4, both = 75, right = 0
+i = 4, j = 4, left = 0, both = 79, right = 0
+i = 4, j = 5, left = 48, both = 31, right = 26
+i = 4, j = 6, left = 49, both = 30, right = 25
+i = 4, j = 7, left = 51, both = 28, right = 25
+i = 4, j = 8, left = 51, both = 28, right = 24
+i = 5, j = 0, left = 28, both = 29, right = 50
+i = 5, j = 1, left = 28, both = 29, right = 49
+i = 5, j = 2, left = 26, both = 31, right = 47
+i = 5, j = 3, left = 26, both = 31, right = 44
+i = 5, j = 4, left = 26, both = 31, right = 48
+i = 5, j = 5, left = 0, both = 57, right = 0
+i = 5, j = 6, left = 2, both = 55, right = 0
+i = 5, j = 7, left = 4, both = 53, right = 0
+i = 5, j = 8, left = 5, both = 52, right = 0
+i = 5, j = 9, left = 5, both = 52, right = 1
+i = 6, j = 1, left = 27, both = 28, right = 50
+i = 6, j = 2, left = 25, both = 30, right = 48
+i = 6, j = 3, left = 25, both = 30, right = 45
+i = 6, j = 4, left = 25, both = 30, right = 49
+i = 6, j = 5, left = 0, both = 55, right = 2
+i = 6, j = 6, left = 0, both = 55, right = 0
+i = 6, j = 7, left = 2, both = 53, right = 0
+i = 6, j = 8, left = 3, both = 52, right = 0
+i = 6, j = 9, left = 3, both = 52, right = 1
+i = 6, j = 10, left = 4, both = 51, right = 2
+i = 7, j = 2, left = 25, both = 28, right = 50
+i = 7, j = 3, left = 25, both = 28, right = 47
+i = 7, j = 4, left = 25, both = 28, right = 51
+i = 7, j = 5, left = 0, both = 53, right = 4
+i = 7, j = 6, left = 0, both = 53, right = 2
+i = 7, j = 7, left = 0, both = 53, right = 0
+i = 7, j = 8, left = 1, both = 52, right = 0
+i = 7, j = 9, left = 1, both = 52, right = 1
+i = 7, j = 10, left = 2, both = 51, right = 2
+i = 7, j = 11, left = 3, both = 50, right = 10
+i = 8, j = 3, left = 24, both = 28, right = 47
+i = 8, j = 4, left = 24, both = 28, right = 51
+i = 8, j = 5, left = 0, both = 52, right = 5
+i = 8, j = 6, left = 0, both = 52, right = 3
+i = 8, j = 7, left = 0, both = 52, right = 1
+i = 8, j = 8, left = 0, both = 52, right = 0
+i = 8, j = 9, left = 0, both = 52, right = 1
+i = 8, j = 10, left = 1, both = 51, right = 2
+i = 8, j = 11, left = 2, both = 50, right = 10
+i = 8, j = 12, left = 3, both = 49, right = 10
+i = 9, j = 4, left = 25, both = 28, right = 51
+i = 9, j = 5, left = 1, both = 52, right = 5
+i = 9, j = 6, left = 1, both = 52, right = 3
+i = 9, j = 7, left = 1, both = 52, right = 1
+i = 9, j = 8, left = 1, both = 52, right = 0
+i = 9, j = 9, left = 0, both = 53, right = 0
+i = 9, j = 10, left = 1, both = 52, right = 1
+i = 9, j = 11, left = 2, both = 51, right = 9
+i = 9, j = 12, left = 3, both = 50, right = 9
+i = 9, j = 13, left = 11, both = 42, right = 12
+i = 10, j = 5, left = 2, both = 51, right = 6
+i = 10, j = 6, left = 2, both = 51, right = 4
+i = 10, j = 7, left = 2, both = 51, right = 2
+i = 10, j = 8, left = 2, both = 51, right = 1
+i = 10, j = 9, left = 1, both = 52, right = 1
+i = 10, j = 10, left = 0, both = 53, right = 0
+i = 10, j = 11, left = 1, both = 52, right = 8
+i = 10, j = 12, left = 2, both = 51, right = 8
+i = 10, j = 13, left = 10, both = 43, right = 11
+i = 10, j = 14, left = 10, both = 43, right = 14
+i = 11, j = 6, left = 10, both = 50, right = 5
+i = 11, j = 7, left = 10, both = 50, right = 3
+i = 11, j = 8, left = 10, both = 50, right = 2
+i = 11, j = 9, left = 9, both = 51, right = 2
+i = 11, j = 10, left = 8, both = 52, right = 1
+i = 11, j = 11, left = 0, both = 60, right = 0
+i = 11, j = 12, left = 1, both = 59, right = 0
+i = 11, j = 13, left = 9, both = 51, right = 3
+i = 11, j = 14, left = 9, both = 51, right = 6
+i = 11, j = 15, left = 9, both = 51, right = 3
+i = 12, j = 7, left = 10, both = 49, right = 4
+i = 12, j = 8, left = 10, both = 49, right = 3
+i = 12, j = 9, left = 9, both = 50, right = 3
+i = 12, j = 10, left = 8, both = 51, right = 2
+i = 12, j = 11, left = 0, both = 59, right = 1
+i = 12, j = 12, left = 0, both = 59, right = 0
+i = 12, j = 13, left = 8, both = 51, right = 3
+i = 12, j = 14, left = 8, both = 51, right = 6
+i = 12, j = 15, left = 8, both = 51, right = 3
+i = 12, j = 16, left = 9, both = 50, right = 3
+i = 13, j = 8, left = 13, both = 41, right = 11
+i = 13, j = 9, left = 12, both = 42, right = 11
+i = 13, j = 10, left = 11, both = 43, right = 10
+i = 13, j = 11, left = 3, both = 51, right = 9
+i = 13, j = 12, left = 3, both = 51, right = 8
+i = 13, j = 13, left = 0, both = 54, right = 0
+i = 13, j = 14, left = 0, both = 54, right = 3
+i = 13, j = 15, left = 0, both = 54, right = 0
+i = 13, j = 16, left = 1, both = 53, right = 0
+i = 13, j = 17, left = 2, both = 52, right = 0
+i = 14, j = 9, left = 15, both = 42, right = 11
+i = 14, j = 10, left = 14, both = 43, right = 10
+i = 14, j = 11, left = 6, both = 51, right = 9
+i = 14, j = 12, left = 6, both = 51, right = 8
+i = 14, j = 13, left = 3, both = 54, right = 0
+i = 14, j = 14, left = 0, both = 57, right = 0
+i = 14, j = 15, left = 3, both = 54, right = 0
+i = 14, j = 16, left = 4, both = 53, right = 0
+i = 14, j = 17, left = 5, both = 52, right = 0
+i = 14, j = 18, left = 6, both = 51, right = 0
+i = 15, j = 10, left = 11, both = 43, right = 10
+i = 15, j = 11, left = 3, both = 51, right = 9
+i = 15, j = 12, left = 3, both = 51, right = 8
+i = 15, j = 13, left = 0, both = 54, right = 0
+i = 15, j = 14, left = 0, both = 54, right = 3
+i = 15, j = 15, left = 0, both = 54, right = 0
+i = 15, j = 16, left = 1, both = 53, right = 0
+i = 15, j = 17, left = 2, both = 52, right = 0
+i = 15, j = 18, left = 3, both = 51, right = 0
+i = 15, j = 19, left = 4, both = 50, right = 1
+i = 16, j = 11, left = 3, both = 50, right = 10
+i = 16, j = 12, left = 3, both = 50, right = 9
+i = 16, j = 13, left = 0, both = 53, right = 1
+i = 16, j = 14, left = 0, both = 53, right = 4
+i = 16, j = 15, left = 0, both = 53, right = 1
+i = 16, j = 16, left = 0, both = 53, right = 0
+i = 16, j = 17, left = 1, both = 52, right = 0
+i = 16, j = 18, left = 2, both = 51, right = 0
+i = 16, j = 19, left = 3, both = 50, right = 1
+i = 16, j = 20, left = 6, both = 47, right = 3
+i = 17, j = 12, left = 3, both = 49, right = 10
+i = 17, j = 13, left = 0, both = 52, right = 2
+i = 17, j = 14, left = 0, both = 52, right = 5
+i = 17, j = 15, left = 0, both = 52, right = 2
+i = 17, j = 16, left = 0, both = 52, right = 1
+i = 17, j = 17, left = 0, both = 52, right = 0
+i = 17, j = 18, left = 1, both = 51, right = 0
+i = 17, j = 19, left = 2, both = 50, right = 1
+i = 17, j = 20, left = 5, both = 47, right = 3
+i = 17, j = 21, left = 6, both = 46, right = 4
+i = 18, j = 13, left = 0, both = 51, right = 3
+i = 18, j = 14, left = 0, both = 51, right = 6
+i = 18, j = 15, left = 0, both = 51, right = 3
+i = 18, j = 16, left = 0, both = 51, right = 2
+i = 18, j = 17, left = 0, both = 51, right = 1
+i = 18, j = 18, left = 0, both = 51, right = 0
+i = 18, j = 19, left = 1, both = 50, right = 1
+i = 18, j = 20, left = 4, both = 47, right = 3
+i = 18, j = 21, left = 5, both = 46, right = 4
+i = 18, j = 22, left = 5, both = 46, right = 7
+i = 19, j = 14, left = 1, both = 50, right = 7
+i = 19, j = 15, left = 1, both = 50, right = 4
+i = 19, j = 16, left = 1, both = 50, right = 3
+i = 19, j = 17, left = 1, both = 50, right = 2
+i = 19, j = 18, left = 1, both = 50, right = 1
+i = 19, j = 19, left = 0, both = 51, right = 0
+i = 19, j = 20, left = 4, both = 47, right = 3
+i = 19, j = 21, left = 5, both = 46, right = 4
+i = 19, j = 22, left = 5, both = 46, right = 7
+i = 19, j = 23, left = 4, both = 47, right = 22
+i = 20, j = 15, left = 3, both = 47, right = 7
+i = 20, j = 16, left = 3, both = 47, right = 6
+i = 20, j = 17, left = 3, both = 47, right = 5
+i = 20, j = 18, left = 3, both = 47, right = 4
+i = 20, j = 19, left = 3, both = 47, right = 4
+i = 20, j = 20, left = 0, both = 50, right = 0
+i = 20, j = 21, left = 1, both = 49, right = 1
+i = 20, j = 22, left = 1, both = 49, right = 4
+i = 20, j = 23, left = 1, both = 49, right = 20
+i = 20, j = 24, left = 4, both = 46, right = 19
+i = 21, j = 16, left = 4, both = 46, right = 7
+i = 21, j = 17, left = 4, both = 46, right = 6
+i = 21, j = 18, left = 4, both = 46, right = 5
+i = 21, j = 19, left = 4, both = 46, right = 5
+i = 21, j = 20, left = 1, both = 49, right = 1
+i = 21, j = 21, left = 0, both = 50, right = 0
+i = 21, j = 22, left = 0, both = 50, right = 3
+i = 21, j = 23, left = 0, both = 50, right = 19
+i = 21, j = 24, left = 4, both = 46, right = 19
+i = 21, j = 25, left = 4, both = 46, right = 20
+i = 22, j = 17, left = 7, both = 46, right = 6
+i = 22, j = 18, left = 7, both = 46, right = 5
+i = 22, j = 19, left = 7, both = 46, right = 5
+i = 22, j = 20, left = 4, both = 49, right = 1
+i = 22, j = 21, left = 3, both = 50, right = 0
+i = 22, j = 22, left = 0, both = 53, right = 0
+i = 22, j = 23, left = 0, both = 53, right = 16
+i = 22, j = 24, left = 4, both = 49, right = 16
+i = 22, j = 25, left = 4, both = 49, right = 17
+i = 22, j = 26, left = 5, both = 48, right = 17
+i = 23, j = 18, left = 22, both = 47, right = 4
+i = 23, j = 19, left = 22, both = 47, right = 4
+i = 23, j = 20, left = 20, both = 49, right = 1
+i = 23, j = 21, left = 19, both = 50, right = 0
+i = 23, j = 22, left = 16, both = 53, right = 0
+i = 23, j = 23, left = 0, both = 69, right = 0
+i = 23, j = 24, left = 4, both = 65, right = 0
+i = 23, j = 25, left = 4, both = 65, right = 1
+i = 23, j = 26, left = 5, both = 64, right = 1
+i = 23, j = 27, left = 5, both = 64, right = 2
+i = 24, j = 19, left = 21, both = 44, right = 7
+i = 24, j = 20, left = 19, both = 46, right = 4
+i = 24, j = 21, left = 19, both = 46, right = 4
+i = 24, j = 22, left = 16, both = 49, right = 4
+i = 24, j = 23, left = 0, both = 65, right = 4
+i = 24, j = 24, left = 0, both = 65, right = 0
+i = 24, j = 25, left = 0, both = 65, right = 1
+i = 24, j = 26, left = 1, both = 64, right = 1
+i = 24, j = 27, left = 1, both = 64, right = 2
+i = 24, j = 28, left = 2, both = 63, right = 2
+i = 25, j = 20, left = 20, both = 46, right = 4
+i = 25, j = 21, left = 20, both = 46, right = 4
+i = 25, j = 22, left = 17, both = 49, right = 4
+i = 25, j = 23, left = 1, both = 65, right = 4
+i = 25, j = 24, left = 1, both = 65, right = 0
+i = 25, j = 25, left = 0, both = 66, right = 0
+i = 25, j = 26, left = 1, both = 65, right = 0
+i = 25, j = 27, left = 1, both = 65, right = 1
+i = 25, j = 28, left = 2, both = 64, right = 1
+i = 25, j = 29, left = 3, both = 63, right = 1
+i = 26, j = 21, left = 20, both = 45, right = 5
+i = 26, j = 22, left = 17, both = 48, right = 5
+i = 26, j = 23, left = 1, both = 64, right = 5
+i = 26, j = 24, left = 1, both = 64, right = 1
+i = 26, j = 25, left = 0, both = 65, right = 1
+i = 26, j = 26, left = 0, both = 65, right = 0
+i = 26, j = 27, left = 1, both = 64, right = 2
+i = 26, j = 28, left = 1, both = 64, right = 1
+i = 26, j = 29, left = 2, both = 63, right = 1
+i = 26, j = 30, left = 2, both = 63, right = 47
+i = 27, j = 22, left = 18, both = 48, right = 5
+i = 27, j = 23, left = 2, both = 64, right = 5
+i = 27, j = 24, left = 2, both = 64, right = 1
+i = 27, j = 25, left = 1, both = 65, right = 1
+i = 27, j = 26, left = 2, both = 64, right = 1
+i = 27, j = 27, left = 0, both = 66, right = 0
+i = 27, j = 28, left = 1, both = 65, right = 0
+i = 27, j = 29, left = 2, both = 64, right = 0
+i = 27, j = 30, left = 2, both = 64, right = 46
+i = 27, j = 31, left = 7, both = 59, right = 48
+i = 28, j = 23, left = 2, both = 63, right = 6
+i = 28, j = 24, left = 2, both = 63, right = 2
+i = 28, j = 25, left = 1, both = 64, right = 2
+i = 28, j = 26, left = 1, both = 64, right = 1
+i = 28, j = 27, left = 0, both = 65, right = 1
+i = 28, j = 28, left = 0, both = 65, right = 0
+i = 28, j = 29, left = 1, both = 64, right = 0
+i = 28, j = 30, left = 1, both = 64, right = 46
+i = 28, j = 31, left = 6, both = 59, right = 48
+i = 28, j = 32, left = 13, both = 52, right = 55
+i = 29, j = 24, left = 2, both = 62, right = 3
+i = 29, j = 25, left = 1, both = 63, right = 3
+i = 29, j = 26, left = 1, both = 63, right = 2
+i = 29, j = 27, left = 0, both = 64, right = 2
+i = 29, j = 28, left = 0, both = 64, right = 1
+i = 29, j = 29, left = 0, both = 64, right = 0
+i = 29, j = 30, left = 0, both = 64, right = 46
+i = 29, j = 31, left = 5, both = 59, right = 48
+i = 29, j = 32, left = 12, both = 52, right = 55
+i = 29, j = 33, left = 13, both = 51, right = 55
+i = 30, j = 25, left = 47, both = 63, right = 3
+i = 30, j = 26, left = 47, both = 63, right = 2
+i = 30, j = 27, left = 46, both = 64, right = 2
+i = 30, j = 28, left = 46, both = 64, right = 1
+i = 30, j = 29, left = 46, both = 64, right = 0
+i = 30, j = 30, left = 0, both = 110, right = 0
+i = 30, j = 31, left = 5, both = 105, right = 2
+i = 30, j = 32, left = 12, both = 98, right = 9
+i = 30, j = 33, left = 13, both = 97, right = 9
+i = 30, j = 34, left = 13, both = 97, right = 10
+i = 31, j = 26, left = 49, both = 58, right = 7
+i = 31, j = 27, left = 48, both = 59, right = 7
+i = 31, j = 28, left = 48, both = 59, right = 6
+i = 31, j = 29, left = 48, both = 59, right = 5
+i = 31, j = 30, left = 2, both = 105, right = 5
+i = 31, j = 31, left = 0, both = 107, right = 0
+i = 31, j = 32, left = 7, both = 100, right = 7
+i = 31, j = 33, left = 8, both = 99, right = 7
+i = 31, j = 34, left = 8, both = 99, right = 8
+i = 31, j = 35, left = 10, both = 97, right = 8
+i = 32, j = 27, left = 55, both = 52, right = 14
+i = 32, j = 28, left = 55, both = 52, right = 13
+i = 32, j = 29, left = 55, both = 52, right = 12
+i = 32, j = 30, left = 9, both = 98, right = 12
+i = 32, j = 31, left = 7, both = 100, right = 7
+i = 32, j = 32, left = 0, both = 107, right = 0
+i = 32, j = 33, left = 1, both = 106, right = 0
+i = 32, j = 34, left = 1, both = 106, right = 1
+i = 32, j = 35, left = 3, both = 104, right = 1
+i = 32, j = 36, left = 4, both = 103, right = 1
+i = 33, j = 28, left = 55, both = 51, right = 14
+i = 33, j = 29, left = 55, both = 51, right = 13
+i = 33, j = 30, left = 9, both = 97, right = 13
+i = 33, j = 31, left = 7, both = 99, right = 8
+i = 33, j = 32, left = 0, both = 106, right = 1
+i = 33, j = 33, left = 0, both = 106, right = 0
+i = 33, j = 34, left = 0, both = 106, right = 1
+i = 33, j = 35, left = 2, both = 104, right = 1
+i = 33, j = 36, left = 3, both = 103, right = 1
+i = 33, j = 37, left = 4, both = 102, right = 1
+i = 34, j = 29, left = 56, both = 51, right = 13
+i = 34, j = 30, left = 10, both = 97, right = 13
+i = 34, j = 31, left = 8, both = 99, right = 8
+i = 34, j = 32, left = 1, both = 106, right = 1
+i = 34, j = 33, left = 1, both = 106, right = 0
+i = 34, j = 34, left = 0, both = 107, right = 0
+i = 34, j = 35, left = 2, both = 105, right = 0
+i = 34, j = 36, left = 3, both = 104, right = 0
+i = 34, j = 37, left = 4, both = 103, right = 0
+i = 34, j = 38, left = 5, both = 102, right = 0
+i = 35, j = 30, left = 10, both = 95, right = 15
+i = 35, j = 31, left = 8, both = 97, right = 10
+i = 35, j = 32, left = 1, both = 104, right = 3
+i = 35, j = 33, left = 1, both = 104, right = 2
+i = 35, j = 34, left = 0, both = 105, right = 2
+i = 35, j = 35, left = 0, both = 105, right = 0
+i = 35, j = 36, left = 1, both = 104, right = 0
+i = 35, j = 37, left = 2, both = 103, right = 0
+i = 35, j = 38, left = 3, both = 102, right = 0
+i = 35, j = 39, left = 10, both = 95, right = 6
+i = 36, j = 31, left = 8, both = 96, right = 11
+i = 36, j = 32, left = 1, both = 103, right = 4
+i = 36, j = 33, left = 1, both = 103, right = 3
+i = 36, j = 34, left = 0, both = 104, right = 3
+i = 36, j = 35, left = 0, both = 104, right = 1
+i = 36, j = 36, left = 0, both = 104, right = 0
+i = 36, j = 37, left = 1, both = 103, right = 0
+i = 36, j = 38, left = 2, both = 102, right = 0
+i = 36, j = 39, left = 9, both = 95, right = 6
+i = 36, j = 40, left = 10, both = 94, right = 6
+i = 37, j = 32, left = 1, both = 102, right = 5
+i = 37, j = 33, left = 1, both = 102, right = 4
+i = 37, j = 34, left = 0, both = 103, right = 4
+i = 37, j = 35, left = 0, both = 103, right = 2
+i = 37, j = 36, left = 0, both = 103, right = 1
+i = 37, j = 37, left = 0, both = 103, right = 0
+i = 37, j = 38, left = 1, both = 102, right = 0
+i = 37, j = 39, left = 8, both = 95, right = 6
+i = 37, j = 40, left = 9, both = 94, right = 6
+i = 37, j = 41, left = 10, both = 93, right = 6
+i = 38, j = 33, left = 1, both = 101, right = 5
+i = 38, j = 34, left = 0, both = 102, right = 5
+i = 38, j = 35, left = 0, both = 102, right = 3
+i = 38, j = 36, left = 0, both = 102, right = 2
+i = 38, j = 37, left = 0, both = 102, right = 1
+i = 38, j = 38, left = 0, both = 102, right = 0
+i = 38, j = 39, left = 7, both = 95, right = 6
+i = 38, j = 40, left = 8, both = 94, right = 6
+i = 38, j = 41, left = 9, both = 93, right = 6
+i = 38, j = 42, left = 17, both = 85, right = 14
+i = 39, j = 34, left = 6, both = 95, right = 12
+i = 39, j = 35, left = 6, both = 95, right = 10
+i = 39, j = 36, left = 6, both = 95, right = 9
+i = 39, j = 37, left = 6, both = 95, right = 8
+i = 39, j = 38, left = 6, both = 95, right = 7
+i = 39, j = 39, left = 0, both = 101, right = 0
+i = 39, j = 40, left = 1, both = 100, right = 0
+i = 39, j = 41, left = 2, both = 99, right = 0
+i = 39, j = 42, left = 10, both = 91, right = 8
+i = 39, j = 43, left = 3, both = 98, right = 0
+i = 40, j = 35, left = 6, both = 94, right = 11
+i = 40, j = 36, left = 6, both = 94, right = 10
+i = 40, j = 37, left = 6, both = 94, right = 9
+i = 40, j = 38, left = 6, both = 94, right = 8
+i = 40, j = 39, left = 0, both = 100, right = 1
+i = 40, j = 40, left = 0, both = 100, right = 0
+i = 40, j = 41, left = 1, both = 99, right = 0
+i = 40, j = 42, left = 9, both = 91, right = 8
+i = 40, j = 43, left = 2, both = 98, right = 0
+i = 40, j = 44, left = 10, both = 90, right = 8
+i = 41, j = 36, left = 6, both = 93, right = 11
+i = 41, j = 37, left = 6, both = 93, right = 10
+i = 41, j = 38, left = 6, both = 93, right = 9
+i = 41, j = 39, left = 0, both = 99, right = 2
+i = 41, j = 40, left = 0, both = 99, right = 1
+i = 41, j = 41, left = 0, both = 99, right = 0
+i = 41, j = 42, left = 8, both = 91, right = 8
+i = 41, j = 43, left = 1, both = 98, right = 0
+i = 41, j = 44, left = 9, both = 90, right = 8
+i = 41, j = 45, left = 9, both = 90, right = 7
+i = 42, j = 37, left = 14, both = 85, right = 18
+i = 42, j = 38, left = 14, both = 85, right = 17
+i = 42, j = 39, left = 8, both = 91, right = 10
+i = 42, j = 40, left = 8, both = 91, right = 9
+i = 42, j = 41, left = 8, both = 91, right = 8
+i = 42, j = 42, left = 0, both = 99, right = 0
+i = 42, j = 43, left = 9, both = 90, right = 8
+i = 42, j = 44, left = 1, both = 98, right = 0
+i = 42, j = 45, left = 2, both = 97, right = 0
+i = 42, j = 46, left = 3, both = 96, right = 0
+i = 43, j = 38, left = 6, both = 92, right = 10
+i = 43, j = 39, left = 0, both = 98, right = 3
+i = 43, j = 40, left = 0, both = 98, right = 2
+i = 43, j = 41, left = 0, both = 98, right = 1
+i = 43, j = 42, left = 8, both = 90, right = 9
+i = 43, j = 43, left = 0, both = 98, right = 0
+i = 43, j = 44, left = 8, both = 90, right = 8
+i = 43, j = 45, left = 8, both = 90, right = 7
+i = 43, j = 46, left = 8, both = 90, right = 6
+i = 43, j = 47, left = 8, both = 90, right = 5
+i = 44, j = 39, left = 8, both = 90, right = 11
+i = 44, j = 40, left = 8, both = 90, right = 10
+i = 44, j = 41, left = 8, both = 90, right = 9
+i = 44, j = 42, left = 0, both = 98, right = 1
+i = 44, j = 43, left = 8, both = 90, right = 8
+i = 44, j = 44, left = 0, both = 98, right = 0
+i = 44, j = 45, left = 1, both = 97, right = 0
+i = 44, j = 46, left = 2, both = 96, right = 0
+i = 44, j = 47, left = 3, both = 95, right = 0
+i = 44, j = 48, left = 4, both = 94, right = 0
+i = 45, j = 40, left = 7, both = 90, right = 10
+i = 45, j = 41, left = 7, both = 90, right = 9
+i = 45, j = 42, left = 0, both = 97, right = 2
+i = 45, j = 43, left = 7, both = 90, right = 8
+i = 45, j = 44, left = 0, both = 97, right = 1
+i = 45, j = 45, left = 0, both = 97, right = 0
+i = 45, j = 46, left = 1, both = 96, right = 0
+i = 45, j = 47, left = 2, both = 95, right = 0
+i = 45, j = 48, left = 3, both = 94, right = 0
+i = 45, j = 49, left = 9, both = 88, right = 0
+i = 46, j = 41, left = 6, both = 90, right = 9
+i = 46, j = 42, left = 0, both = 96, right = 3
+i = 46, j = 43, left = 6, both = 90, right = 8
+i = 46, j = 44, left = 0, both = 96, right = 2
+i = 46, j = 45, left = 0, both = 96, right = 1
+i = 46, j = 46, left = 0, both = 96, right = 0
+i = 46, j = 47, left = 1, both = 95, right = 0
+i = 46, j = 48, left = 2, both = 94, right = 0
+i = 46, j = 49, left = 8, both = 88, right = 0
+i = 46, j = 50, left = 10, both = 86, right = 4
+i = 47, j = 42, left = 0, both = 95, right = 4
+i = 47, j = 43, left = 5, both = 90, right = 8
+i = 47, j = 44, left = 0, both = 95, right = 3
+i = 47, j = 45, left = 0, both = 95, right = 2
+i = 47, j = 46, left = 0, both = 95, right = 1
+i = 47, j = 47, left = 0, both = 95, right = 0
+i = 47, j = 48, left = 1, both = 94, right = 0
+i = 47, j = 49, left = 7, both = 88, right = 0
+i = 47, j = 50, left = 9, both = 86, right = 4
+i = 47, j = 51, left = 69, both = 26, right = 64
+i = 48, j = 43, left = 5, both = 89, right = 9
+i = 48, j = 44, left = 0, both = 94, right = 4
+i = 48, j = 45, left = 0, both = 94, right = 3
+i = 48, j = 46, left = 0, both = 94, right = 2
+i = 48, j = 47, left = 0, both = 94, right = 1
+i = 48, j = 48, left = 0, both = 94, right = 0
+i = 48, j = 49, left = 6, both = 88, right = 0
+i = 48, j = 50, left = 8, both = 86, right = 4
+i = 48, j = 51, left = 68, both = 26, right = 64
+i = 48, j = 52, left = 69, both = 25, right = 65
+i = 49, j = 44, left = 0, both = 88, right = 10
+i = 49, j = 45, left = 0, both = 88, right = 9
+i = 49, j = 46, left = 0, both = 88, right = 8
+i = 49, j = 47, left = 0, both = 88, right = 7
+i = 49, j = 48, left = 0, both = 88, right = 6
+i = 49, j = 49, left = 0, both = 88, right = 0
+i = 49, j = 50, left = 2, both = 86, right = 4
+i = 49, j = 51, left = 62, both = 26, right = 64
+i = 49, j = 52, left = 63, both = 25, right = 65
+i = 49, j = 53, left = 63, both = 25, right = 65
+i = 50, j = 45, left = 4, both = 86, right = 11
+i = 50, j = 46, left = 4, both = 86, right = 10
+i = 50, j = 47, left = 4, both = 86, right = 9
+i = 50, j = 48, left = 4, both = 86, right = 8
+i = 50, j = 49, left = 4, both = 86, right = 2
+i = 50, j = 50, left = 0, both = 90, right = 0
+i = 50, j = 51, left = 64, both = 26, right = 64
+i = 50, j = 52, left = 64, both = 26, right = 64
+i = 50, j = 53, left = 64, both = 26, right = 64
+i = 50, j = 54, left = 63, both = 27, right = 64
+i = 51, j = 46, left = 64, both = 26, right = 70
+i = 51, j = 47, left = 64, both = 26, right = 69
+i = 51, j = 48, left = 64, both = 26, right = 68
+i = 51, j = 49, left = 64, both = 26, right = 62
+i = 51, j = 50, left = 64, both = 26, right = 64
+i = 51, j = 51, left = 0, both = 90, right = 0
+i = 51, j = 52, left = 1, both = 89, right = 1
+i = 51, j = 53, left = 2, both = 88, right = 2
+i = 51, j = 54, left = 2, both = 88, right = 3
+i = 51, j = 55, left = 3, both = 87, right = 3
+i = 52, j = 47, left = 65, both = 25, right = 70
+i = 52, j = 48, left = 65, both = 25, right = 69
+i = 52, j = 49, left = 65, both = 25, right = 63
+i = 52, j = 50, left = 64, both = 26, right = 64
+i = 52, j = 51, left = 1, both = 89, right = 1
+i = 52, j = 52, left = 0, both = 90, right = 0
+i = 52, j = 53, left = 1, both = 89, right = 1
+i = 52, j = 54, left = 1, both = 89, right = 2
+i = 52, j = 55, left = 2, both = 88, right = 2
+i = 52, j = 56, left = 2, both = 88, right = 2
+i = 53, j = 48, left = 65, both = 25, right = 69
+i = 53, j = 49, left = 65, both = 25, right = 63
+i = 53, j = 50, left = 64, both = 26, right = 64
+i = 53, j = 51, left = 2, both = 88, right = 2
+i = 53, j = 52, left = 1, both = 89, right = 1
+i = 53, j = 53, left = 0, both = 90, right = 0
+i = 53, j = 54, left = 0, both = 90, right = 1
+i = 53, j = 55, left = 1, both = 89, right = 1
+i = 53, j = 56, left = 1, both = 89, right = 1
+i = 53, j = 57, left = 1, both = 89, right = 2
+i = 54, j = 49, left = 65, both = 26, right = 62
+i = 54, j = 50, left = 64, both = 27, right = 63
+i = 54, j = 51, left = 3, both = 88, right = 2
+i = 54, j = 52, left = 2, both = 89, right = 1
+i = 54, j = 53, left = 1, both = 90, right = 0
+i = 54, j = 54, left = 0, both = 91, right = 0
+i = 54, j = 55, left = 1, both = 90, right = 0
+i = 54, j = 56, left = 2, both = 89, right = 1
+i = 54, j = 57, left = 2, both = 89, right = 2
+i = 54, j = 58, left = 3, both = 88, right = 16
+i = 55, j = 50, left = 63, both = 27, right = 63
+i = 55, j = 51, left = 3, both = 87, right = 3
+i = 55, j = 52, left = 2, both = 88, right = 2
+i = 55, j = 53, left = 1, both = 89, right = 1
+i = 55, j = 54, left = 0, both = 90, right = 1
+i = 55, j = 55, left = 0, both = 90, right = 0
+i = 55, j = 56, left = 1, both = 89, right = 1
+i = 55, j = 57, left = 1, both = 89, right = 2
+i = 55, j = 58, left = 2, both = 88, right = 16
+i = 55, j = 59, left = 2, both = 88, right = 15
+i = 56, j = 51, left = 3, both = 87, right = 3
+i = 56, j = 52, left = 2, both = 88, right = 2
+i = 56, j = 53, left = 1, both = 89, right = 1
+i = 56, j = 54, left = 1, both = 89, right = 2
+i = 56, j = 55, left = 1, both = 89, right = 1
+i = 56, j = 56, left = 0, both = 90, right = 0
+i = 56, j = 57, left = 0, both = 90, right = 1
+i = 56, j = 58, left = 1, both = 89, right = 15
+i = 56, j = 59, left = 1, both = 89, right = 14
+i = 56, j = 60, left = 1, both = 89, right = 13
+i = 57, j = 52, left = 3, both = 88, right = 2
+i = 57, j = 53, left = 2, both = 89, right = 1
+i = 57, j = 54, left = 2, both = 89, right = 2
+i = 57, j = 55, left = 2, both = 89, right = 1
+i = 57, j = 56, left = 1, both = 90, right = 0
+i = 57, j = 57, left = 0, both = 91, right = 0
+i = 57, j = 58, left = 1, both = 90, right = 14
+i = 57, j = 59, left = 1, both = 90, right = 13
+i = 57, j = 60, left = 1, both = 90, right = 12
+i = 57, j = 61, left = 1, both = 90, right = 10
+i = 58, j = 53, left = 16, both = 88, right = 2
+i = 58, j = 54, left = 16, both = 88, right = 3
+i = 58, j = 55, left = 16, both = 88, right = 2
+i = 58, j = 56, left = 15, both = 89, right = 1
+i = 58, j = 57, left = 14, both = 90, right = 1
+i = 58, j = 58, left = 0, both = 104, right = 0
+i = 58, j = 59, left = 1, both = 103, right = 0
+i = 58, j = 60, left = 2, both = 102, right = 0
+i = 58, j = 61, left = 4, both = 100, right = 0
+i = 58, j = 62, left = 5, both = 99, right = 0
+i = 59, j = 54, left = 15, both = 88, right = 3
+i = 59, j = 55, left = 15, both = 88, right = 2
+i = 59, j = 56, left = 14, both = 89, right = 1
+i = 59, j = 57, left = 13, both = 90, right = 1
+i = 59, j = 58, left = 0, both = 103, right = 1
+i = 59, j = 59, left = 0, both = 103, right = 0
+i = 59, j = 60, left = 1, both = 102, right = 0
+i = 59, j = 61, left = 3, both = 100, right = 0
+i = 59, j = 62, left = 4, both = 99, right = 0
+i = 59, j = 63, left = 5, both = 98, right = 0
+i = 60, j = 55, left = 14, both = 88, right = 2
+i = 60, j = 56, left = 13, both = 89, right = 1
+i = 60, j = 57, left = 12, both = 90, right = 1
+i = 60, j = 58, left = 0, both = 102, right = 2
+i = 60, j = 59, left = 0, both = 102, right = 1
+i = 60, j = 60, left = 0, both = 102, right = 0
+i = 60, j = 61, left = 2, both = 100, right = 0
+i = 60, j = 62, left = 3, both = 99, right = 0
+i = 60, j = 63, left = 4, both = 98, right = 0
+i = 60, j = 64, left = 5, both = 97, right = 0
+i = 61, j = 56, left = 11, both = 89, right = 1
+i = 61, j = 57, left = 10, both = 90, right = 1
+i = 61, j = 58, left = 0, both = 100, right = 4
+i = 61, j = 59, left = 0, both = 100, right = 3
+i = 61, j = 60, left = 0, both = 100, right = 2
+i = 61, j = 61, left = 0, both = 100, right = 0
+i = 61, j = 62, left = 1, both = 99, right = 0
+i = 61, j = 63, left = 2, both = 98, right = 0
+i = 61, j = 64, left = 3, both = 97, right = 0
+i = 61, j = 65, left = 5, both = 95, right = 0
+i = 62, j = 57, left = 9, both = 90, right = 1
+i = 62, j = 58, left = 0, both = 99, right = 5
+i = 62, j = 59, left = 0, both = 99, right = 4
+i = 62, j = 60, left = 0, both = 99, right = 3
+i = 62, j = 61, left = 0, both = 99, right = 1
+i = 62, j = 62, left = 0, both = 99, right = 0
+i = 62, j = 63, left = 1, both = 98, right = 0
+i = 62, j = 64, left = 2, both = 97, right = 0
+i = 62, j = 65, left = 4, both = 95, right = 0
+i = 62, j = 66, left = 6, both = 93, right = 0
+i = 63, j = 58, left = 0, both = 98, right = 6
+i = 63, j = 59, left = 0, both = 98, right = 5
+i = 63, j = 60, left = 0, both = 98, right = 4
+i = 63, j = 61, left = 0, both = 98, right = 2
+i = 63, j = 62, left = 0, both = 98, right = 1
+i = 63, j = 63, left = 0, both = 98, right = 0
+i = 63, j = 64, left = 1, both = 97, right = 0
+i = 63, j = 65, left = 3, both = 95, right = 0
+i = 63, j = 66, left = 5, both = 93, right = 0
+i = 63, j = 67, left = 6, both = 92, right = 1
+i = 64, j = 59, left = 0, both = 97, right = 6
+i = 64, j = 60, left = 0, both = 97, right = 5
+i = 64, j = 61, left = 0, both = 97, right = 3
+i = 64, j = 62, left = 0, both = 97, right = 2
+i = 64, j = 63, left = 0, both = 97, right = 1
+i = 64, j = 64, left = 0, both = 97, right = 0
+i = 64, j = 65, left = 2, both = 95, right = 0
+i = 64, j = 66, left = 4, both = 93, right = 0
+i = 64, j = 67, left = 5, both = 92, right = 1
+i = 64, j = 68, left = 6, both = 91, right = 1
+i = 65, j = 60, left = 0, both = 95, right = 7
+i = 65, j = 61, left = 0, both = 95, right = 5
+i = 65, j = 62, left = 0, both = 95, right = 4
+i = 65, j = 63, left = 0, both = 95, right = 3
+i = 65, j = 64, left = 0, both = 95, right = 2
+i = 65, j = 65, left = 0, both = 95, right = 0
+i = 65, j = 66, left = 2, both = 93, right = 0
+i = 65, j = 67, left = 3, both = 92, right = 1
+i = 65, j = 68, left = 4, both = 91, right = 1
+i = 65, j = 69, left = 5, both = 90, right = 1
+i = 66, j = 61, left = 0, both = 93, right = 7
+i = 66, j = 62, left = 0, both = 93, right = 6
+i = 66, j = 63, left = 0, both = 93, right = 5
+i = 66, j = 64, left = 0, both = 93, right = 4
+i = 66, j = 65, left = 0, both = 93, right = 2
+i = 66, j = 66, left = 0, both = 93, right = 0
+i = 66, j = 67, left = 1, both = 92, right = 1
+i = 66, j = 68, left = 2, both = 91, right = 1
+i = 66, j = 69, left = 3, both = 90, right = 1
+i = 66, j = 70, left = 4, both = 89, right = 1
+i = 67, j = 62, left = 1, both = 92, right = 7
+i = 67, j = 63, left = 1, both = 92, right = 6
+i = 67, j = 64, left = 1, both = 92, right = 5
+i = 67, j = 65, left = 1, both = 92, right = 3
+i = 67, j = 66, left = 1, both = 92, right = 1
+i = 67, j = 67, left = 0, both = 93, right = 0
+i = 67, j = 68, left = 1, both = 92, right = 0
+i = 67, j = 69, left = 2, both = 91, right = 0
+i = 67, j = 70, left = 3, both = 90, right = 0
+i = 67, j = 71, left = 4, both = 89, right = 1
+i = 68, j = 63, left = 1, both = 91, right = 7
+i = 68, j = 64, left = 1, both = 91, right = 6
+i = 68, j = 65, left = 1, both = 91, right = 4
+i = 68, j = 66, left = 1, both = 91, right = 2
+i = 68, j = 67, left = 0, both = 92, right = 1
+i = 68, j = 68, left = 0, both = 92, right = 0
+i = 68, j = 69, left = 1, both = 91, right = 0
+i = 68, j = 70, left = 2, both = 90, right = 0
+i = 68, j = 71, left = 3, both = 89, right = 1
+i = 68, j = 72, left = 4, both = 88, right = 2
+i = 69, j = 64, left = 1, both = 90, right = 7
+i = 69, j = 65, left = 1, both = 90, right = 5
+i = 69, j = 66, left = 1, both = 90, right = 3
+i = 69, j = 67, left = 0, both = 91, right = 2
+i = 69, j = 68, left = 0, both = 91, right = 1
+i = 69, j = 69, left = 0, both = 91, right = 0
+i = 69, j = 70, left = 1, both = 90, right = 0
+i = 69, j = 71, left = 2, both = 89, right = 1
+i = 69, j = 72, left = 3, both = 88, right = 2
+i = 69, j = 73, left = 4, both = 87, right = 2
+i = 70, j = 65, left = 1, both = 89, right = 6
+i = 70, j = 66, left = 1, both = 89, right = 4
+i = 70, j = 67, left = 0, both = 90, right = 3
+i = 70, j = 68, left = 0, both = 90, right = 2
+i = 70, j = 69, left = 0, both = 90, right = 1
+i = 70, j = 70, left = 0, both = 90, right = 0
+i = 70, j = 71, left = 1, both = 89, right = 1
+i = 70, j = 72, left = 2, both = 88, right = 2
+i = 70, j = 73, left = 3, both = 87, right = 2
+i = 70, j = 74, left = 4, both = 86, right = 2
+i = 71, j = 66, left = 2, both = 88, right = 5
+i = 71, j = 67, left = 1, both = 89, right = 4
+i = 71, j = 68, left = 1, both = 89, right = 3
+i = 71, j = 69, left = 1, both = 89, right = 2
+i = 71, j = 70, left = 1, both = 89, right = 1
+i = 71, j = 71, left = 0, both = 90, right = 0
+i = 71, j = 72, left = 1, both = 89, right = 1
+i = 71, j = 73, left = 2, both = 88, right = 1
+i = 71, j = 74, left = 3, both = 87, right = 1
+i = 71, j = 75, left = 8, both = 82, right = 1
+i = 72, j = 67, left = 2, both = 88, right = 5
+i = 72, j = 68, left = 2, both = 88, right = 4
+i = 72, j = 69, left = 2, both = 88, right = 3
+i = 72, j = 70, left = 2, both = 88, right = 2
+i = 72, j = 71, left = 1, both = 89, right = 1
+i = 72, j = 72, left = 0, both = 90, right = 0
+i = 72, j = 73, left = 1, both = 89, right = 0
+i = 72, j = 74, left = 2, both = 88, right = 0
+i = 72, j = 75, left = 7, both = 83, right = 0
+i = 72, j = 76, left = 8, both = 82, right = 0
+i = 73, j = 68, left = 2, both = 87, right = 5
+i = 73, j = 69, left = 2, both = 87, right = 4
+i = 73, j = 70, left = 2, both = 87, right = 3
+i = 73, j = 71, left = 1, both = 88, right = 2
+i = 73, j = 72, left = 0, both = 89, right = 1
+i = 73, j = 73, left = 0, both = 89, right = 0
+i = 73, j = 74, left = 1, both = 88, right = 0
+i = 73, j = 75, left = 6, both = 83, right = 0
+i = 73, j = 76, left = 7, both = 82, right = 0
+i = 73, j = 77, left = 8, both = 81, right = 0
+i = 74, j = 69, left = 2, both = 86, right = 5
+i = 74, j = 70, left = 2, both = 86, right = 4
+i = 74, j = 71, left = 1, both = 87, right = 3
+i = 74, j = 72, left = 0, both = 88, right = 2
+i = 74, j = 73, left = 0, both = 88, right = 1
+i = 74, j = 74, left = 0, both = 88, right = 0
+i = 74, j = 75, left = 5, both = 83, right = 0
+i = 74, j = 76, left = 6, both = 82, right = 0
+i = 74, j = 77, left = 7, both = 81, right = 0
+i = 74, j = 78, left = 8, both = 80, right = 0
+i = 75, j = 70, left = 2, both = 81, right = 9
+i = 75, j = 71, left = 1, both = 82, right = 8
+i = 75, j = 72, left = 0, both = 83, right = 7
+i = 75, j = 73, left = 0, both = 83, right = 6
+i = 75, j = 74, left = 0, both = 83, right = 5
+i = 75, j = 75, left = 0, both = 83, right = 0
+i = 75, j = 76, left = 1, both = 82, right = 0
+i = 75, j = 77, left = 2, both = 81, right = 0
+i = 75, j = 78, left = 3, both = 80, right = 0
+i = 75, j = 79, left = 4, both = 79, right = 0
+i = 76, j = 71, left = 1, both = 81, right = 9
+i = 76, j = 72, left = 0, both = 82, right = 8
+i = 76, j = 73, left = 0, both = 82, right = 7
+i = 76, j = 74, left = 0, both = 82, right = 6
+i = 76, j = 75, left = 0, both = 82, right = 1
+i = 76, j = 76, left = 0, both = 82, right = 0
+i = 76, j = 77, left = 1, both = 81, right = 0
+i = 76, j = 78, left = 2, both = 80, right = 0
+i = 76, j = 79, left = 3, both = 79, right = 0
+i = 76, j = 80, left = 3, both = 79, right = 1
+i = 77, j = 72, left = 0, both = 81, right = 9
+i = 77, j = 73, left = 0, both = 81, right = 8
+i = 77, j = 74, left = 0, both = 81, right = 7
+i = 77, j = 75, left = 0, both = 81, right = 2
+i = 77, j = 76, left = 0, both = 81, right = 1
+i = 77, j = 77, left = 0, both = 81, right = 0
+i = 77, j = 78, left = 1, both = 80, right = 0
+i = 77, j = 79, left = 2, both = 79, right = 0
+i = 77, j = 80, left = 2, both = 79, right = 1
+i = 77, j = 81, left = 2, both = 79, right = 2
+i = 78, j = 73, left = 0, both = 80, right = 9
+i = 78, j = 74, left = 0, both = 80, right = 8
+i = 78, j = 75, left = 0, both = 80, right = 3
+i = 78, j = 76, left = 0, both = 80, right = 2
+i = 78, j = 77, left = 0, both = 80, right = 1
+i = 78, j = 78, left = 0, both = 80, right = 0
+i = 78, j = 79, left = 1, both = 79, right = 0
+i = 78, j = 80, left = 1, both = 79, right = 1
+i = 78, j = 81, left = 1, both = 79, right = 2
+i = 78, j = 82, left = 2, both = 78, right = 2
+i = 79, j = 74, left = 0, both = 79, right = 9
+i = 79, j = 75, left = 0, both = 79, right = 4
+i = 79, j = 76, left = 0, both = 79, right = 3
+i = 79, j = 77, left = 0, both = 79, right = 2
+i = 79, j = 78, left = 0, both = 79, right = 1
+i = 79, j = 79, left = 0, both = 79, right = 0
+i = 79, j = 80, left = 0, both = 79, right = 1
+i = 79, j = 81, left = 0, both = 79, right = 2
+i = 79, j = 82, left = 1, both = 78, right = 2
+i = 79, j = 83, left = 3, both = 76, right = 2
+i = 80, j = 75, left = 1, both = 79, right = 4
+i = 80, j = 76, left = 1, both = 79, right = 3
+i = 80, j = 77, left = 1, both = 79, right = 2
+i = 80, j = 78, left = 1, both = 79, right = 1
+i = 80, j = 79, left = 1, both = 79, right = 0
+i = 80, j = 80, left = 0, both = 80, right = 0
+i = 80, j = 81, left = 0, both = 80, right = 1
+i = 80, j = 82, left = 1, both = 79, right = 1
+i = 80, j = 83, left = 3, both = 77, right = 1
+i = 80, j = 84, left = 4, both = 76, right = 1
+i = 81, j = 76, left = 2, both = 79, right = 3
+i = 81, j = 77, left = 2, both = 79, right = 2
+i = 81, j = 78, left = 2, both = 79, right = 1
+i = 81, j = 79, left = 2, both = 79, right = 0
+i = 81, j = 80, left = 1, both = 80, right = 0
+i = 81, j = 81, left = 0, both = 81, right = 0
+i = 81, j = 82, left = 1, both = 80, right = 0
+i = 81, j = 83, left = 3, both = 78, right = 0
+i = 81, j = 84, left = 4, both = 77, right = 0
+i = 81, j = 85, left = 7, both = 74, right = 0
+i = 82, j = 77, left = 2, both = 78, right = 3
+i = 82, j = 78, left = 2, both = 78, right = 2
+i = 82, j = 79, left = 2, both = 78, right = 1
+i = 82, j = 80, left = 1, both = 79, right = 1
+i = 82, j = 81, left = 0, both = 80, right = 1
+i = 82, j = 82, left = 0, both = 80, right = 0
+i = 82, j = 83, left = 2, both = 78, right = 0
+i = 82, j = 84, left = 3, both = 77, right = 0
+i = 82, j = 85, left = 6, both = 74, right = 0
+i = 82, j = 86, left = 7, both = 73, right = 0
+i = 83, j = 78, left = 2, both = 76, right = 4
+i = 83, j = 79, left = 2, both = 76, right = 3
+i = 83, j = 80, left = 1, both = 77, right = 3
+i = 83, j = 81, left = 0, both = 78, right = 3
+i = 83, j = 82, left = 0, both = 78, right = 2
+i = 83, j = 83, left = 0, both = 78, right = 0
+i = 83, j = 84, left = 1, both = 77, right = 0
+i = 83, j = 85, left = 4, both = 74, right = 0
+i = 83, j = 86, left = 5, both = 73, right = 0
+i = 83, j = 87, left = 11, both = 67, right = 1
+i = 84, j = 79, left = 2, both = 75, right = 4
+i = 84, j = 80, left = 1, both = 76, right = 4
+i = 84, j = 81, left = 0, both = 77, right = 4
+i = 84, j = 82, left = 0, both = 77, right = 3
+i = 84, j = 83, left = 0, both = 77, right = 1
+i = 84, j = 84, left = 0, both = 77, right = 0
+i = 84, j = 85, left = 3, both = 74, right = 0
+i = 84, j = 86, left = 4, both = 73, right = 0
+i = 84, j = 87, left = 10, both = 67, right = 1
+i = 84, j = 88, left = 10, both = 67, right = 1
+i = 85, j = 80, left = 1, both = 73, right = 7
+i = 85, j = 81, left = 0, both = 74, right = 7
+i = 85, j = 82, left = 0, both = 74, right = 6
+i = 85, j = 83, left = 0, both = 74, right = 4
+i = 85, j = 84, left = 0, both = 74, right = 3
+i = 85, j = 85, left = 0, both = 74, right = 0
+i = 85, j = 86, left = 1, both = 73, right = 0
+i = 85, j = 87, left = 7, both = 67, right = 1
+i = 85, j = 88, left = 7, both = 67, right = 1
+i = 85, j = 89, left = 14, both = 60, right = 1
+i = 86, j = 81, left = 0, both = 73, right = 8
+i = 86, j = 82, left = 0, both = 73, right = 7
+i = 86, j = 83, left = 0, both = 73, right = 5
+i = 86, j = 84, left = 0, both = 73, right = 4
+i = 86, j = 85, left = 0, both = 73, right = 1
+i = 86, j = 86, left = 0, both = 73, right = 0
+i = 86, j = 87, left = 6, both = 67, right = 1
+i = 86, j = 88, left = 6, both = 67, right = 1
+i = 86, j = 89, left = 13, both = 60, right = 1
+i = 86, j = 90, left = 15, both = 58, right = 1
+i = 87, j = 82, left = 1, both = 67, right = 13
+i = 87, j = 83, left = 1, both = 67, right = 11
+i = 87, j = 84, left = 1, both = 67, right = 10
+i = 87, j = 85, left = 1, both = 67, right = 7
+i = 87, j = 86, left = 1, both = 67, right = 6
+i = 87, j = 87, left = 0, both = 68, right = 0
+i = 87, j = 88, left = 1, both = 67, right = 1
+i = 87, j = 89, left = 8, both = 60, right = 1
+i = 87, j = 90, left = 10, both = 58, right = 1
+i = 87, j = 91, left = 13, both = 55, right = 2
+i = 88, j = 83, left = 1, both = 67, right = 11
+i = 88, j = 84, left = 1, both = 67, right = 10
+i = 88, j = 85, left = 1, both = 67, right = 7
+i = 88, j = 86, left = 1, both = 67, right = 6
+i = 88, j = 87, left = 1, both = 67, right = 1
+i = 88, j = 88, left = 0, both = 68, right = 0
+i = 88, j = 89, left = 7, both = 61, right = 0
+i = 88, j = 90, left = 9, both = 59, right = 0
+i = 88, j = 91, left = 12, both = 56, right = 1
+i = 88, j = 92, left = 11, both = 57, right = 0
+i = 89, j = 84, left = 1, both = 60, right = 17
+i = 89, j = 85, left = 1, both = 60, right = 14
+i = 89, j = 86, left = 1, both = 60, right = 13
+i = 89, j = 87, left = 1, both = 60, right = 8
+i = 89, j = 88, left = 0, both = 61, right = 7
+i = 89, j = 89, left = 0, both = 61, right = 0
+i = 89, j = 90, left = 2, both = 59, right = 0
+i = 89, j = 91, left = 5, both = 56, right = 1
+i = 89, j = 92, left = 4, both = 57, right = 0
+i = 89, j = 93, left = 6, both = 55, right = 1
+i = 90, j = 85, left = 1, both = 58, right = 16
+i = 90, j = 86, left = 1, both = 58, right = 15
+i = 90, j = 87, left = 1, both = 58, right = 10
+i = 90, j = 88, left = 0, both = 59, right = 9
+i = 90, j = 89, left = 0, both = 59, right = 2
+i = 90, j = 90, left = 0, both = 59, right = 0
+i = 90, j = 91, left = 3, both = 56, right = 1
+i = 90, j = 92, left = 2, both = 57, right = 0
+i = 90, j = 93, left = 4, both = 55, right = 1
+i = 90, j = 94, left = 4, both = 55, right = 0
+i = 91, j = 86, left = 2, both = 55, right = 18
+i = 91, j = 87, left = 2, both = 55, right = 13
+i = 91, j = 88, left = 1, both = 56, right = 12
+i = 91, j = 89, left = 1, both = 56, right = 5
+i = 91, j = 90, left = 1, both = 56, right = 3
+i = 91, j = 91, left = 0, both = 57, right = 0
+i = 91, j = 92, left = 1, both = 56, right = 1
+i = 91, j = 93, left = 3, both = 54, right = 2
+i = 91, j = 94, left = 3, both = 54, right = 1
+i = 91, j = 95, left = 4, both = 53, right = 1
+i = 92, j = 87, left = 1, both = 56, right = 12
+i = 92, j = 88, left = 0, both = 57, right = 11
+i = 92, j = 89, left = 0, both = 57, right = 4
+i = 92, j = 90, left = 0, both = 57, right = 2
+i = 92, j = 91, left = 1, both = 56, right = 1
+i = 92, j = 92, left = 0, both = 57, right = 0
+i = 92, j = 93, left = 2, both = 55, right = 1
+i = 92, j = 94, left = 2, both = 55, right = 0
+i = 92, j = 95, left = 3, both = 54, right = 0
+i = 92, j = 96, left = 4, both = 53, right = 0
+i = 93, j = 88, left = 1, both = 55, right = 13
+i = 93, j = 89, left = 1, both = 55, right = 6
+i = 93, j = 90, left = 1, both = 55, right = 4
+i = 93, j = 91, left = 2, both = 54, right = 3
+i = 93, j = 92, left = 1, both = 55, right = 2
+i = 93, j = 93, left = 0, both = 56, right = 0
+i = 93, j = 94, left = 1, both = 55, right = 0
+i = 93, j = 95, left = 2, both = 54, right = 0
+i = 93, j = 96, left = 3, both = 53, right = 0
+i = 93, j = 97, left = 4, both = 52, right = 0
+i = 94, j = 89, left = 0, both = 55, right = 6
+i = 94, j = 90, left = 0, both = 55, right = 4
+i = 94, j = 91, left = 1, both = 54, right = 3
+i = 94, j = 92, left = 0, both = 55, right = 2
+i = 94, j = 93, left = 0, both = 55, right = 1
+i = 94, j = 94, left = 0, both = 55, right = 0
+i = 94, j = 95, left = 1, both = 54, right = 0
+i = 94, j = 96, left = 2, both = 53, right = 0
+i = 94, j = 97, left = 3, both = 52, right = 0
+i = 94, j = 98, left = 6, both = 49, right = 3
+i = 95, j = 90, left = 0, both = 54, right = 5
+i = 95, j = 91, left = 1, both = 53, right = 4
+i = 95, j = 92, left = 0, both = 54, right = 3
+i = 95, j = 93, left = 0, both = 54, right = 2
+i = 95, j = 94, left = 0, both = 54, right = 1
+i = 95, j = 95, left = 0, both = 54, right = 0
+i = 95, j = 96, left = 1, both = 53, right = 0
+i = 95, j = 97, left = 2, both = 52, right = 0
+i = 95, j = 98, left = 5, both = 49, right = 3
+i = 95, j = 99, left = 7, both = 47, right = 0
+i = 96, j = 91, left = 1, both = 52, right = 5
+i = 96, j = 92, left = 0, both = 53, right = 4
+i = 96, j = 93, left = 0, both = 53, right = 3
+i = 96, j = 94, left = 0, both = 53, right = 2
+i = 96, j = 95, left = 0, both = 53, right = 1
+i = 96, j = 96, left = 0, both = 53, right = 0
+i = 96, j = 97, left = 1, both = 52, right = 0
+i = 96, j = 98, left = 4, both = 49, right = 3
+i = 96, j = 99, left = 6, both = 47, right = 0
+i = 96, j = 100, left = 9, both = 44, right = 0
+i = 97, j = 92, left = 0, both = 52, right = 5
+i = 97, j = 93, left = 0, both = 52, right = 4
+i = 97, j = 94, left = 0, both = 52, right = 3
+i = 97, j = 95, left = 0, both = 52, right = 2
+i = 97, j = 96, left = 0, both = 52, right = 1
+i = 97, j = 97, left = 0, both = 52, right = 0
+i = 97, j = 98, left = 3, both = 49, right = 3
+i = 97, j = 99, left = 5, both = 47, right = 0
+i = 97, j = 100, left = 8, both = 44, right = 0
+i = 97, j = 101, left = 9, both = 43, right = 0
+i = 98, j = 93, left = 3, both = 49, right = 7
+i = 98, j = 94, left = 3, both = 49, right = 6
+i = 98, j = 95, left = 3, both = 49, right = 5
+i = 98, j = 96, left = 3, both = 49, right = 4
+i = 98, j = 97, left = 3, both = 49, right = 3
+i = 98, j = 98, left = 0, both = 52, right = 0
+i = 98, j = 99, left = 5, both = 47, right = 0
+i = 98, j = 100, left = 8, both = 44, right = 0
+i = 98, j = 101, left = 9, both = 43, right = 0
+i = 98, j = 102, left = 11, both = 41, right = 2
+i = 99, j = 94, left = 0, both = 47, right = 8
+i = 99, j = 95, left = 0, both = 47, right = 7
+i = 99, j = 96, left = 0, both = 47, right = 6
+i = 99, j = 97, left = 0, both = 47, right = 5
+i = 99, j = 98, left = 0, both = 47, right = 5
+i = 99, j = 99, left = 0, both = 47, right = 0
+i = 99, j = 100, left = 3, both = 44, right = 0
+i = 99, j = 101, left = 4, both = 43, right = 0
+i = 99, j = 102, left = 6, both = 41, right = 2
+i = 99, j = 103, left = 7, both = 40, right = 2
+i = 100, j = 95, left = 0, both = 44, right = 10
+i = 100, j = 96, left = 0, both = 44, right = 9
+i = 100, j = 97, left = 0, both = 44, right = 8
+i = 100, j = 98, left = 0, both = 44, right = 8
+i = 100, j = 99, left = 0, both = 44, right = 3
+i = 100, j = 100, left = 0, both = 44, right = 0
+i = 100, j = 101, left = 1, both = 43, right = 0
+i = 100, j = 102, left = 3, both = 41, right = 2
+i = 100, j = 103, left = 4, both = 40, right = 2
+i = 100, j = 104, left = 4, both = 40, right = 0
+i = 101, j = 96, left = 0, both = 43, right = 10
+i = 101, j = 97, left = 0, both = 43, right = 9
+i = 101, j = 98, left = 0, both = 43, right = 9
+i = 101, j = 99, left = 0, both = 43, right = 4
+i = 101, j = 100, left = 0, both = 43, right = 1
+i = 101, j = 101, left = 0, both = 43, right = 0
+i = 101, j = 102, left = 2, both = 41, right = 2
+i = 101, j = 103, left = 3, both = 40, right = 2
+i = 101, j = 104, left = 3, both = 40, right = 0
+i = 101, j = 105, left = 5, both = 38, right = 0
+i = 102, j = 97, left = 2, both = 41, right = 11
+i = 102, j = 98, left = 2, both = 41, right = 11
+i = 102, j = 99, left = 2, both = 41, right = 6
+i = 102, j = 100, left = 2, both = 41, right = 3
+i = 102, j = 101, left = 2, both = 41, right = 2
+i = 102, j = 102, left = 0, both = 43, right = 0
+i = 102, j = 103, left = 1, both = 42, right = 0
+i = 102, j = 104, left = 3, both = 40, right = 0
+i = 102, j = 105, left = 5, both = 38, right = 0
+i = 102, j = 106, left = 7, both = 36, right = 0
+i = 103, j = 98, left = 2, both = 40, right = 12
+i = 103, j = 99, left = 2, both = 40, right = 7
+i = 103, j = 100, left = 2, both = 40, right = 4
+i = 103, j = 101, left = 2, both = 40, right = 3
+i = 103, j = 102, left = 0, both = 42, right = 1
+i = 103, j = 103, left = 0, both = 42, right = 0
+i = 103, j = 104, left = 2, both = 40, right = 0
+i = 103, j = 105, left = 4, both = 38, right = 0
+i = 103, j = 106, left = 6, both = 36, right = 0
+i = 103, j = 107, left = 7, both = 35, right = 0
+i = 104, j = 99, left = 0, both = 40, right = 7
+i = 104, j = 100, left = 0, both = 40, right = 4
+i = 104, j = 101, left = 0, both = 40, right = 3
+i = 104, j = 102, left = 0, both = 40, right = 3
+i = 104, j = 103, left = 0, both = 40, right = 2
+i = 104, j = 104, left = 0, both = 40, right = 0
+i = 104, j = 105, left = 2, both = 38, right = 0
+i = 104, j = 106, left = 4, both = 36, right = 0
+i = 104, j = 107, left = 5, both = 35, right = 0
+i = 104, j = 108, left = 6, both = 34, right = 0
+i = 105, j = 100, left = 0, both = 38, right = 6
+i = 105, j = 101, left = 0, both = 38, right = 5
+i = 105, j = 102, left = 0, both = 38, right = 5
+i = 105, j = 103, left = 0, both = 38, right = 4
+i = 105, j = 104, left = 0, both = 38, right = 2
+i = 105, j = 105, left = 0, both = 38, right = 0
+i = 105, j = 106, left = 2, both = 36, right = 0
+i = 105, j = 107, left = 3, both = 35, right = 0
+i = 105, j = 108, left = 4, both = 34, right = 0
+i = 105, j = 109, left = 7, both = 31, right = 0
+i = 106, j = 101, left = 0, both = 36, right = 7
+i = 106, j = 102, left = 0, both = 36, right = 7
+i = 106, j = 103, left = 0, both = 36, right = 6
+i = 106, j = 104, left = 0, both = 36, right = 4
+i = 106, j = 105, left = 0, both = 36, right = 2
+i = 106, j = 106, left = 0, both = 36, right = 0
+i = 106, j = 107, left = 1, both = 35, right = 0
+i = 106, j = 108, left = 2, both = 34, right = 0
+i = 106, j = 109, left = 5, both = 31, right = 0
+i = 106, j = 110, left = 6, both = 30, right = 0
+i = 107, j = 102, left = 0, both = 35, right = 8
+i = 107, j = 103, left = 0, both = 35, right = 7
+i = 107, j = 104, left = 0, both = 35, right = 5
+i = 107, j = 105, left = 0, both = 35, right = 3
+i = 107, j = 106, left = 0, both = 35, right = 1
+i = 107, j = 107, left = 0, both = 35, right = 0
+i = 107, j = 108, left = 1, both = 34, right = 0
+i = 107, j = 109, left = 4, both = 31, right = 0
+i = 107, j = 110, left = 5, both = 30, right = 0
+i = 107, j = 111, left = 9, both = 26, right = 0
+i = 108, j = 103, left = 0, both = 34, right = 8
+i = 108, j = 104, left = 0, both = 34, right = 6
+i = 108, j = 105, left = 0, both = 34, right = 4
+i = 108, j = 106, left = 0, both = 34, right = 2
+i = 108, j = 107, left = 0, both = 34, right = 1
+i = 108, j = 108, left = 0, both = 34, right = 0
+i = 108, j = 109, left = 3, both = 31, right = 0
+i = 108, j = 110, left = 4, both = 30, right = 0
+i = 108, j = 111, left = 8, both = 26, right = 0
+i = 108, j = 112, left = 22, both = 12, right = 0
+i = 109, j = 104, left = 0, both = 31, right = 9
+i = 109, j = 105, left = 0, both = 31, right = 7
+i = 109, j = 106, left = 0, both = 31, right = 5
+i = 109, j = 107, left = 0, both = 31, right = 4
+i = 109, j = 108, left = 0, both = 31, right = 3
+i = 109, j = 109, left = 0, both = 31, right = 0
+i = 109, j = 110, left = 1, both = 30, right = 0
+i = 109, j = 111, left = 5, both = 26, right = 0
+i = 109, j = 112, left = 19, both = 12, right = 0
+i = 109, j = 113, left = 21, both = 10, right = 0
+i = 110, j = 105, left = 0, both = 30, right = 8
+i = 110, j = 106, left = 0, both = 30, right = 6
+i = 110, j = 107, left = 0, both = 30, right = 5
+i = 110, j = 108, left = 0, both = 30, right = 4
+i = 110, j = 109, left = 0, both = 30, right = 1
+i = 110, j = 110, left = 0, both = 30, right = 0
+i = 110, j = 111, left = 4, both = 26, right = 0
+i = 110, j = 112, left = 18, both = 12, right = 0
+i = 110, j = 113, left = 20, both = 10, right = 0
+i = 111, j = 106, left = 0, both = 26, right = 10
+i = 111, j = 107, left = 0, both = 26, right = 9
+i = 111, j = 108, left = 0, both = 26, right = 8
+i = 111, j = 109, left = 0, both = 26, right = 5
+i = 111, j = 110, left = 0, both = 26, right = 4
+i = 111, j = 111, left = 0, both = 26, right = 0
+i = 111, j = 112, left = 14, both = 12, right = 0
+i = 111, j = 113, left = 16, both = 10, right = 0
+i = 112, j = 107, left = 0, both = 12, right = 23
+i = 112, j = 108, left = 0, both = 12, right = 22
+i = 112, j = 109, left = 0, both = 12, right = 19
+i = 112, j = 110, left = 0, both = 12, right = 18
+i = 112, j = 111, left = 0, both = 12, right = 14
+i = 112, j = 112, left = 0, both = 12, right = 0
+i = 112, j = 113, left = 2, both = 10, right = 0
+i = 113, j = 108, left = 0, both = 10, right = 24
+i = 113, j = 109, left = 0, both = 10, right = 21
+i = 113, j = 110, left = 0, both = 10, right = 20
+i = 113, j = 111, left = 0, both = 10, right = 16
+i = 113, j = 112, left = 0, both = 10, right = 2
+i = 113, j = 113, left = 0, both = 10, right = 0

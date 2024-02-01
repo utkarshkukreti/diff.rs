@@ -228,7 +228,18 @@ fn gitignores() {
             let to = (i + 5).min(all.len());
             for j in from..to {
                 let diff = diff(&all[i], &all[j]);
-                actual.push_str(&format!("i = {}, j = {}, len = {}\n", i, j, diff.len()));
+                let (mut left, mut both, mut right) = (0, 0, 0);
+                for d in &diff {
+                    match *d {
+                        ::diff::Result::Left(_) => left += 1,
+                        ::diff::Result::Both(_, _) => both += 1,
+                        ::diff::Result::Right(_) => right += 1,
+                    }
+                }
+                actual.push_str(&format!(
+                    "i = {}, j = {}, left = {}, both = {}, right = {}\n",
+                    i, j, left, both, right
+                ));
                 let undiff = undiff(&diff);
                 assert_eq!(&undiff.0, &all[i]);
                 assert_eq!(&undiff.1, &all[j]);
