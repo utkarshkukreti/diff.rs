@@ -18,7 +18,7 @@ pub fn undiff<T: Clone>(diff: &[::diff::Result<&T>]) -> (Vec<T>, Vec<T>) {
     (left, right)
 }
 
-pub fn undiff_str<'a>(diff: &[::diff::Result<&'a str>]) -> (Vec<&'a str>, Vec<&'a str>) {
+pub fn undiff_lines<'a>(diff: &[::diff::Result<&'a str>]) -> (String, String) {
     let (mut left, mut right) = (vec![], vec![]);
     for d in diff {
         match *d {
@@ -30,11 +30,6 @@ pub fn undiff_str<'a>(diff: &[::diff::Result<&'a str>]) -> (Vec<&'a str>, Vec<&'
             Right(r) => right.push(r),
         }
     }
-    (left, right)
-}
-
-pub fn undiff_lines<'a>(diff: &[::diff::Result<&'a str>]) -> (String, String) {
-    let (left, right) = undiff_str(diff);
     (left.join("\n"), right.join("\n"))
 }
 
@@ -107,9 +102,9 @@ fn test_lines() {
     fn go(left: &str, right: &str, len: usize) {
         let diff = ::diff::lines(left, right);
         assert_eq!(diff.len(), len);
-        let (left_, right_) = undiff_str(&diff);
-        assert_eq!(left, left_.join("\n"));
-        assert_eq!(right, right_.join("\n"));
+        let (left_, right_) = undiff_lines(&diff);
+        assert_eq!(left, left_);
+        assert_eq!(right, right_);
     }
 
     go("", "", 0);
