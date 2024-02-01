@@ -206,36 +206,20 @@ fn gitignores() {
         &all,
         ::diff::lines,
         undiff_lines,
-        |d| match d {
-            Left(l) => format!("-{}\n", l),
-            Right(r) => format!("+{}\n", r),
-            Both(l, _) => format!(" {}\n", l),
-        },
-        "tests/data/gitignores.lines.diff",
+        "tests/data/gitignores.lines.txt",
     );
 
     go(
         &all,
         ::diff::chars,
         undiff_chars,
-        |d| match d {
-            Left(l) => format!("[-{}-]", l),
-            Right(r) => format!("{{+{}+}}", r),
-            Both(l, _) => format!("{}", l),
-        },
-        "tests/data/gitignores.chars.diff",
+        "tests/data/gitignores.chars.txt",
     );
 
-    fn go<'a, T, Diff, Undiff, ToString>(
-        all: &'a [String],
-        diff: Diff,
-        undiff: Undiff,
-        to_string: ToString,
-        path: &str,
-    ) where
+    fn go<'a, T, Diff, Undiff>(all: &'a [String], diff: Diff, undiff: Undiff, path: &str)
+    where
         Diff: Fn(&'a str, &'a str) -> Vec<::diff::Result<T>>,
         Undiff: Fn(&[::diff::Result<T>]) -> (String, String),
-        ToString: Fn(&::diff::Result<T>) -> String,
         T: 'a,
     {
         let mut actual = String::new();
@@ -243,12 +227,8 @@ fn gitignores() {
             let from = i.saturating_sub(2);
             let to = (i + 2).min(all.len());
             for j in from..to {
-                actual.push_str(&format!("i = {}, j = {}\n", i, j));
                 let diff = diff(&all[i], &all[j]);
-                for d in &diff {
-                    actual.push_str(&to_string(d));
-                }
-                actual.push_str("\n");
+                actual.push_str(&format!("i = {}, j = {}, len = {}\n", i, j, diff.len()));
                 let undiff = undiff(&diff);
                 assert_eq!(&undiff.0, &all[i]);
                 assert_eq!(&undiff.1, &all[j]);
