@@ -224,8 +224,8 @@ fn gitignores() {
     {
         let mut actual = String::new();
         for i in 0..all.len() {
-            let from = i.saturating_sub(2);
-            let to = (i + 2).min(all.len());
+            let from = i.saturating_sub(5);
+            let to = (i + 5).min(all.len());
             for j in from..to {
                 let diff = diff(&all[i], &all[j]);
                 actual.push_str(&format!("i = {}, j = {}, len = {}\n", i, j, diff.len()));
