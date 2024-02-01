@@ -67,28 +67,6 @@ where
         .take_while(|(l, r)| l == r)
         .count();
 
-    let left_inner = &left[leading_equals..left.len() - trailing_equals];
-    let right_inner = &right[leading_equals..right.len() - trailing_equals];
-
-    let table: Vec2<u32> = {
-        let mut table = Vec2::new(0, [left_inner.len() + 1, right_inner.len() + 1]);
-
-        for (i, l) in left_inner.iter().enumerate() {
-            for (j, r) in right_inner.iter().enumerate() {
-                table.set(
-                    [i + 1, j + 1],
-                    if l == r {
-                        table.get([i, j]) + 1
-                    } else {
-                        *table.get([i, j + 1]).max(table.get([i + 1, j]))
-                    },
-                );
-            }
-        }
-
-        table
-    };
-
     let mut diff = Vec::with_capacity(left.len().max(right.len()));
 
     diff.extend(
@@ -98,30 +76,12 @@ where
             .map(|(l, r)| Result::Both(mapper(l), mapper(r))),
     );
 
-    {
-        let start = diff.len();
-        let mut i = table.len[0] - 1;
-        let mut j = table.len[1] - 1;
-        loop {
-            if j > 0 && (i == 0 || table.get([i, j]) == table.get([i, j - 1])) {
-                j -= 1;
-                diff.push(Result::Right(mapper(&right_inner[j])));
-            } else if i > 0 && (j == 0 || table.get([i, j]) == table.get([i - 1, j])) {
-                i -= 1;
-                diff.push(Result::Left(mapper(&left_inner[i])));
-            } else if i > 0 && j > 0 {
-                i -= 1;
-                j -= 1;
-                diff.push(Result::Both(
-                    mapper(&left_inner[i]),
-                    mapper(&right_inner[j]),
-                ));
-            } else {
-                break;
-            }
-        }
-        diff[start..].reverse();
-    }
+    do_naive_diff(
+        &left[leading_equals..left.len() - trailing_equals],
+        &right[leading_equals..right.len() - trailing_equals],
+        &mapper,
+        &mut diff,
+    );
 
     diff.extend(
         left[left.len() - trailing_equals..]
@@ -131,6 +91,49 @@ where
     );
 
     diff
+}
+
+fn do_naive_diff<'a, T, F, U>(left: &'a [T], right: &'a [T], mapper: F, diff: &mut Vec<Result<U>>)
+where
+    T: PartialEq,
+    F: Fn(&'a T) -> U,
+{
+    let mut table = Vec2::new(0u32, [left.len() + 1, right.len() + 1]);
+
+    for (i, l) in left.iter().enumerate() {
+        for (j, r) in right.iter().enumerate() {
+            table.set(
+                [i + 1, j + 1],
+                if l == r {
+                    table.get([i, j]) + 1
+                } else {
+                    *table.get([i, j + 1]).max(table.get([i + 1, j]))
+                },
+            );
+        }
+    }
+
+    let start = diff.len();
+
+    let mut i = table.len[0] - 1;
+    let mut j = table.len[1] - 1;
+    loop {
+        if j > 0 && (i == 0 || table.get([i, j]) == table.get([i, j - 1])) {
+            j -= 1;
+            diff.push(Result::Right(mapper(&right[j])));
+        } else if i > 0 && (j == 0 || table.get([i, j]) == table.get([i - 1, j])) {
+            i -= 1;
+            diff.push(Result::Left(mapper(&left[i])));
+        } else if i > 0 && j > 0 {
+            i -= 1;
+            j -= 1;
+            diff.push(Result::Both(mapper(&left[i]), mapper(&right[j])));
+        } else {
+            break;
+        }
+    }
+
+    diff[start..].reverse();
 }
 
 struct Vec2<T> {
