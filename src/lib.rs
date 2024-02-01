@@ -67,14 +67,14 @@ where
         .take_while(|(l, r)| l == r)
         .count();
 
+    let left_inner = &left[leading_equals..left.len() - trailing_equals];
+    let right_inner = &right[leading_equals..right.len() - trailing_equals];
+
     let table: Vec2<u32> = {
-        let left_skip = &left[leading_equals..left.len() - trailing_equals];
-        let right_skip = &right[leading_equals..right.len() - trailing_equals];
+        let mut table = Vec2::new(0, [left_inner.len() + 1, right_inner.len() + 1]);
 
-        let mut table = Vec2::new(0, [left_skip.len() + 1, right_skip.len() + 1]);
-
-        for (i, l) in left_skip.iter().enumerate() {
-            for (j, r) in right_skip.iter().enumerate() {
+        for (i, l) in left_inner.iter().enumerate() {
+            for (j, r) in right_inner.iter().enumerate() {
                 table.set(
                     [i + 1, j + 1],
                     if l == r {
@@ -102,20 +102,20 @@ where
         let start = diff.len();
         let mut i = table.len[0] - 1;
         let mut j = table.len[1] - 1;
-        let left = &left[leading_equals..];
-        let right = &right[leading_equals..];
-
         loop {
             if j > 0 && (i == 0 || table.get([i, j]) == table.get([i, j - 1])) {
                 j -= 1;
-                diff.push(Result::Right(mapper(&right[j])));
+                diff.push(Result::Right(mapper(&right_inner[j])));
             } else if i > 0 && (j == 0 || table.get([i, j]) == table.get([i - 1, j])) {
                 i -= 1;
-                diff.push(Result::Left(mapper(&left[i])));
+                diff.push(Result::Left(mapper(&left_inner[i])));
             } else if i > 0 && j > 0 {
                 i -= 1;
                 j -= 1;
-                diff.push(Result::Both(mapper(&left[i]), mapper(&right[j])));
+                diff.push(Result::Both(
+                    mapper(&left_inner[i]),
+                    mapper(&right_inner[j]),
+                ));
             } else {
                 break;
             }
