@@ -39,7 +39,7 @@ pub fn undiff_lines<'a>(diff: &[::diff::Result<&'a str>]) -> (String, String) {
 }
 
 pub fn undiff_chars(diff: &[::diff::Result<char>]) -> (String, String) {
-    let (mut left, mut right) = (vec![], vec![]);
+    let (mut left, mut right) = (String::new(), String::new());
     for d in diff {
         match *d {
             Left(l) => left.push(l),
@@ -50,10 +50,7 @@ pub fn undiff_chars(diff: &[::diff::Result<char>]) -> (String, String) {
             Right(r) => right.push(r),
         }
     }
-    (
-        left.iter().cloned().collect(),
-        right.iter().cloned().collect(),
-    )
+    (left, right)
 }
 
 #[test]
