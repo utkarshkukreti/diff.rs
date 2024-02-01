@@ -231,9 +231,9 @@ fn gitignores() {
                 let (mut left, mut both, mut right) = (0, 0, 0);
                 for d in &diff {
                     match *d {
-                        ::diff::Result::Left(_) => left += 1,
-                        ::diff::Result::Both(_, _) => both += 1,
-                        ::diff::Result::Right(_) => right += 1,
+                        Left(_) => left += 1,
+                        Both(_, _) => both += 1,
+                        Right(_) => right += 1,
                     }
                 }
                 actual.push_str(&format!(
