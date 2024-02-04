@@ -24,23 +24,23 @@ fn main() {
             diff::chars(&left, &right)
         };
 
-        let mut open = None;
+        let mut close = None;
 
         for d in diff {
-            match (d, open) {
+            match (d, close) {
                 (diff::Result::Left(l), Some("-]")) => print!("{}", l),
                 (diff::Result::Left(l), open_) => {
                     print!("{}[-{}", open_.unwrap_or(""), l);
-                    open = Some("-]");
+                    close = Some("-]");
                 }
                 (diff::Result::Right(r), Some("+}")) => print!("{}", r),
                 (diff::Result::Right(r), open_) => {
                     print!("{}{{+{}", open_.unwrap_or(""), r);
-                    open = Some("+}");
+                    close = Some("+}");
                 }
                 (diff::Result::Both(l, _), Some(open_)) => {
                     print!("{}{}", open_, l);
-                    open = None;
+                    close = None;
                 }
                 (diff::Result::Both(l, _), None) => print!("{}", l),
             }
