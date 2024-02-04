@@ -70,6 +70,22 @@ fn bench_real_world(c: &mut Criterion) {
         })
     });
 
+    c.bench_function(
+        "diff::myers::lines on gitignore files from rust-lang/rust",
+        |b| {
+            b.iter(|| {
+                for (i, left) in gitignores.iter().enumerate() {
+                    // diff with previous 3, itself, and next 3
+                    for right in
+                        gitignores[i.saturating_sub(3)..(i + 3).min(gitignores.len())].iter()
+                    {
+                        ::diff::myers::lines(&left, &right);
+                    }
+                }
+            })
+        },
+    );
+
     c.bench_function("diff::chars on gitignore files from rust-lang/rust", |b| {
         b.iter(|| {
             for (i, left) in gitignores.iter().enumerate() {
@@ -80,4 +96,20 @@ fn bench_real_world(c: &mut Criterion) {
             }
         })
     });
+
+    c.bench_function(
+        "diff::myers::chars on gitignore files from rust-lang/rust",
+        |b| {
+            b.iter(|| {
+                for (i, left) in gitignores.iter().enumerate() {
+                    // diff with previous 2, itself, and next 2
+                    for right in
+                        gitignores[i.saturating_sub(2)..(i + 2).min(gitignores.len())].iter()
+                    {
+                        ::diff::myers::chars(&left, &right);
+                    }
+                }
+            })
+        },
+    );
 }

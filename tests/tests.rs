@@ -59,6 +59,14 @@ fn test_slice() {
         let (left_, right_) = undiff(&diff);
         assert_eq!(left, &left_[..]);
         assert_eq!(right, &right_[..]);
+
+        let diff2 = ::diff::myers::slice(left, right);
+        assert_eq!(diff2.len(), len);
+        let (left_, right_) = undiff(&diff2);
+        assert_eq!(left, &left_[..]);
+        assert_eq!(right, &right_[..]);
+
+        assert_eq!(diff.len(), diff2.len());
     }
 
     let slice: &[()] = &[];
@@ -95,6 +103,14 @@ fn test_slice_quickcheck() {
     }
 
     ::quickcheck::quickcheck(prop as fn(Vec<i32>, Vec<i32>) -> bool);
+
+    fn prop_myers(left: Vec<i32>, right: Vec<i32>) -> bool {
+        let diff = ::diff::myers::slice(&left, &right);
+        let (left_, right_) = undiff(&diff);
+        left == left_[..] && right == right_[..]
+    }
+
+    ::quickcheck::quickcheck(prop_myers as fn(Vec<i32>, Vec<i32>) -> bool);
 }
 
 #[test]
@@ -105,6 +121,14 @@ fn test_lines() {
         let (left_, right_) = undiff_lines(&diff);
         assert_eq!(left, left_);
         assert_eq!(right, right_);
+
+        let diff2 = ::diff::myers::lines(left, right);
+        assert_eq!(diff2.len(), len);
+        let (left_, right_) = undiff_lines(&diff2);
+        assert_eq!(left, left_);
+        assert_eq!(right, right_);
+
+        assert_eq!(diff.len(), diff2.len());
     }
 
     go("", "", 0);
@@ -133,6 +157,14 @@ fn test_chars() {
         let (left_, right_) = undiff_chars(&diff);
         assert_eq!(left, left_);
         assert_eq!(right, right_);
+
+        let diff2 = ::diff::myers::chars(left, right);
+        assert_eq!(diff2.len(), len);
+        let (left_, right_) = undiff_chars(&diff2);
+        assert_eq!(left, left_);
+        assert_eq!(right, right_);
+
+        assert_eq!(diff.len(), diff2.len());
     }
 
     go("", "", 0);
@@ -149,6 +181,9 @@ fn test_chars() {
 fn test_issue_4() {
     assert_eq!(::diff::slice(&[1], &[2]), vec![Left(&1), Right(&2)]);
     assert_eq!(::diff::lines("a", "b"), vec![Left("a"), Right("b")]);
+
+    assert_eq!(::diff::myers::slice(&[1], &[2]), vec![Left(&1), Right(&2)]);
+    assert_eq!(::diff::myers::lines("a", "b"), vec![Left("a"), Right("b")]);
 }
 
 #[test]
@@ -190,6 +225,7 @@ BacktraceNode {
     ]
 }"#;
     ::diff::lines(actual, expected);
+    ::diff::myers::lines(actual, expected);
 }
 
 #[test]
@@ -212,6 +248,20 @@ fn gitignores() {
     go(
         &all,
         ::diff::chars,
+        undiff_chars,
+        "tests/data/gitignores.chars.txt",
+    );
+
+    go(
+        &all,
+        ::diff::myers::lines,
+        undiff_lines,
+        "tests/data/gitignores.lines.txt",
+    );
+
+    go(
+        &all,
+        ::diff::myers::chars,
         undiff_chars,
         "tests/data/gitignores.chars.txt",
     );
