@@ -9,8 +9,9 @@ homepage = "https://github.com/utkarshkukreti/diff.rs"
 repository = "https://github.com/utkarshkukreti/diff.rs"
 
 [dev-dependencies]
-quickcheck = "1.0.3"
 criterion = "0.5.1"
+fastrand = "2.0.1"
+quickcheck = "1.0.3"
 
 [[bench]]
 name = "benches"

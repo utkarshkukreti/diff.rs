@@ -7,40 +7,44 @@ criterion::criterion_group!(benches, bench_slice, bench_chars, bench_real_world)
 criterion::criterion_main!(benches);
 
 fn bench_slice(c: &mut Criterion) {
-    c.bench_function("empty", |b| {
-        let slice = [0u8; 0];
-        b.iter(|| ::diff::slice(&slice, &slice));
-    });
+    let mut rng = fastrand::Rng::with_seed(0);
 
-    c.bench_function("10 equal items", |b| {
-        let slice = [0u8; 10];
-        b.iter(|| ::diff::slice(&slice, &slice));
-    });
+    let left = (0..1000).map(|_| rng.u8(..)).collect::<Vec<_>>();
 
-    c.bench_function("10 non-equal items", |b| {
-        let (left, right) = ([0u8; 10], [1u8; 10]);
-        b.iter(|| ::diff::slice(&left, &right));
-    });
+    let swap_10 = swap(&left, 10, &mut rng);
+    let swap_50 = swap(&left, 50, &mut rng);
+    let swap_100 = swap(&left, 100, &mut rng);
+    let swap_500 = swap(&left, 500, &mut rng);
+    let swap_1000 = swap(&left, 1000, &mut rng);
 
-    c.bench_function("100 equal items", |b| {
-        let slice = [0u8; 100];
-        b.iter(|| ::diff::slice(&slice, &slice));
-    });
+    for (name, vec) in [
+        ("swap_10", &swap_10),
+        ("swap_50", &swap_50),
+        ("swap_100", &swap_100),
+        ("swap_500", &swap_500),
+        ("swap_1000", &swap_1000),
+    ] {
+        assert_eq!(
+            ::diff::slice(&left, vec).len(),
+            ::diff::myers::slice(&left, vec).len()
+        );
 
-    c.bench_function("100 non-equal items", |b| {
-        let (left, right) = ([0u8; 100], [1u8; 100]);
-        b.iter(|| ::diff::slice(&left, &right));
-    });
+        c.bench_function(&format!("diff::slice {}", name), |b| {
+            b.iter(|| ::diff::slice(&left, &vec));
+        });
 
-    c.bench_function("1000 equal items", |b| {
-        let slice = [0u8; 1000];
-        b.iter(|| ::diff::slice(&slice, &slice));
-    });
+        c.bench_function(&format!("diff::myers::slice {}", name), |b| {
+            b.iter(|| ::diff::myers::slice(&left, &vec));
+        });
+    }
 
-    c.bench_function("1000 non-equal items", |b| {
-        let (left, right) = ([0u8; 1000], [1u8; 1000]);
-        b.iter(|| ::diff::slice(&left, &right));
-    });
+    fn swap<T: Clone>(slice: &[T], swaps: usize, rng: &mut fastrand::Rng) -> Vec<T> {
+        let mut vec = slice.to_vec();
+        for _ in 0..swaps {
+            vec.swap(rng.usize(..slice.len()), rng.usize(..slice.len()));
+        }
+        vec
+    }
 }
 
 fn bench_chars(c: &mut Criterion) {
