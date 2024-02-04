@@ -3,7 +3,7 @@ extern crate diff;
 
 use criterion::Criterion;
 
-criterion::criterion_group!(benches, bench_slice, bench_chars, bench_real_world);
+criterion::criterion_group!(benches, bench_slice, bench_real_world);
 criterion::criterion_main!(benches);
 
 fn bench_slice(c: &mut Criterion) {
@@ -45,15 +45,6 @@ fn bench_slice(c: &mut Criterion) {
         }
         vec
     }
-}
-
-fn bench_chars(c: &mut Criterion) {
-    c.bench_function("1024 byte string, last 256 different", |b| {
-        let left = "?".repeat(768) + &"_".repeat(256);
-        let right = "?".repeat(768) + &"!".repeat(256);
-        assert_eq!(left.len(), right.len());
-        b.iter(|| ::diff::chars(&left, &right));
-    });
 }
 
 fn bench_real_world(c: &mut Criterion) {
