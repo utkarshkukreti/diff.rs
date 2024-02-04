@@ -29,13 +29,18 @@ fn bench_slice(c: &mut Criterion) {
             ::diff::myers::slice(&left, vec).len()
         );
 
-        c.bench_function(&format!("diff::slice {}", name), |b| {
+        let diffs = ::diff::slice(&left, vec).len() - left.len();
+
+        c.bench_function(&format!("diff::slice {} ({} diffs)", name, diffs), |b| {
             b.iter(|| ::diff::slice(&left, &vec));
         });
 
-        c.bench_function(&format!("diff::myers::slice {}", name), |b| {
-            b.iter(|| ::diff::myers::slice(&left, &vec));
-        });
+        c.bench_function(
+            &format!("diff::myers::slice {} ({} diffs)", name, diffs),
+            |b| {
+                b.iter(|| ::diff::myers::slice(&left, &vec));
+            },
+        );
     }
 
     fn swap<T: Clone>(slice: &[T], swaps: usize, rng: &mut fastrand::Rng) -> Vec<T> {
